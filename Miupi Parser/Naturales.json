@@ -1,0 +1,6886 @@
+[
+    {
+        "Curso": "ASTR3005",
+        "Seccion": "0U1",
+        "Profesor": "PANTOJA, CARMEN",
+        "Nombre": "ASTRONOMIA DESCRIPTIVA",
+        "Dias": [
+            "LW",
+            "W"
+        ],
+        "Horario": [
+            "04:00PM-05:20PM",
+            "06:00PM-09:50PM"
+        ],
+        "Salones": [
+            "CNL-C-311",
+            "CNL-C-311"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "ASTR3055",
+        "Seccion": "0U1",
+        "Profesor": "ALTSCHULER, D. ",
+        "Nombre": "EVOLUCION COSMICA",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-354"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "001",
+        "Profesor": "RAMIREZ, R. ",
+        "Nombre": "BIOLOGIA GENERAL I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50PM"
+        ],
+        "Salones": [
+            "CNL-A-309"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "002",
+        "Profesor": "RAM J/BERNABE,R",
+        "Nombre": "BIOLOGIA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-142"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "003",
+        "Profesor": "BERNABE, R. ",
+        "Nombre": "BIOLOGIA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-235"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "101",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-238"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "102",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-238"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "103",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-238"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "104",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-238"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "105",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-238"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "106",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-238"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "107",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-238"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3101",
+        "Seccion": "108",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-238"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "001",
+        "Profesor": "VIERA, J. ",
+        "Nombre": "BIOLOGIA GENERAL II",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-309"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "002",
+        "Profesor": "ACEVEDO, J. ",
+        "Nombre": "BIOLOGIA GENERAL II",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-211"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "003",
+        "Profesor": "ACEVEDO, J. ",
+        "Nombre": "BIOLOGIA GENERAL II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-211"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "004",
+        "Profesor": "SABAT, A. ",
+        "Nombre": "BIOLOGIA GENERAL II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "04:00PM-05:20PM"
+        ],
+        "Salones": [
+            "CNL-A-231"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "101",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-234"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "102",
+        "Profesor": "NUEVO INGRESO ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-236"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "103",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-234"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "104",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-234"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "105",
+        "Profesor": "NUEVO INGRESO ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-236"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "106",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-234"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "107",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-236"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "108",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-234"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "109",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-234"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "110",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-234"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "111",
+        "Profesor": "NUEVO INGRESO ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-236"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "112",
+        "Profesor": "NUEVO INGRESO ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-234"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "113",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-236"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "114",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-234"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "115",
+        "Profesor": "NUEVO INGRESO ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-236"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3102",
+        "Seccion": "116",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-234"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3111",
+        "Seccion": "0U1",
+        "Profesor": "AIDE/CUEVAS ",
+        "Nombre": "INTROD A LA ECOLOGIA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-211"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3112",
+        "Seccion": "001",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO DE ECOLOGIA",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-105"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3112",
+        "Seccion": "002",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO DE ECOLOGIA",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-105"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3112",
+        "Seccion": "003",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO DE ECOLOGIA",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-105"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3112",
+        "Seccion": "004",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO DE ECOLOGIA",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-105"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3349",
+        "Seccion": "001",
+        "Profesor": "CINTRON, N. ",
+        "Nombre": "GENETICA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-227"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3349",
+        "Seccion": "002",
+        "Profesor": "CINTRON, N. ",
+        "Nombre": "GENETICA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-309"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3350",
+        "Seccion": "001",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO DE GENETICA",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-206"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3350",
+        "Seccion": "002",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO DE GENETICA",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-206"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3350",
+        "Seccion": "003",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO DE GENETICA",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-206"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3350",
+        "Seccion": "004",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO DE GENETICA",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "10:00AM-12:50PM"
+        ],
+        "Salones": [
+            "CN-206"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3350",
+        "Seccion": "005",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO DE GENETICA",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-206"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3365",
+        "Seccion": "001",
+        "Profesor": "VIERA, J. ",
+        "Nombre": "LAB BIOTECNOLOGIA MOLECU",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-208"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "BIOL3365",
+        "Seccion": "002",
+        "Profesor": "TBA",
+        "Nombre": "LAB BIOTECNOLOGIA MOLECU",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-208"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "BIOL3365",
+        "Seccion": "003",
+        "Profesor": "TBA",
+        "Nombre": "LAB BIOTECNOLOGIA MOLECU",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-208"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "BIOL3365",
+        "Seccion": "004",
+        "Profesor": "TBA",
+        "Nombre": "LAB BIOTECNOLOGIA MOLECU",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-208"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "BIOL3365",
+        "Seccion": "005",
+        "Profesor": "TBA",
+        "Nombre": "LAB BIOTECNOLOGIA MOLECU",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "10:00AM-12:50PM"
+        ],
+        "Salones": [
+            "CN-208"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "BIOL3410",
+        "Seccion": "0U1",
+        "Profesor": "NAZARIO, G. ",
+        "Nombre": "BIOL ORGANISMAL VEGETAL",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "04:00PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-340"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3410",
+        "Seccion": "101",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-106"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3410",
+        "Seccion": "102",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-106"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3410",
+        "Seccion": "103",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "11:30AM-02:20PM"
+        ],
+        "Salones": [
+            "CN-105"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3410",
+        "Seccion": "104",
+        "Profesor": "NAZARIO, G. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-106"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3425",
+        "Seccion": "0U1",
+        "Profesor": "JOGLAR, R. ",
+        "Nombre": "BIOL ORGANISMAL ANIMAL",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "04:00PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-339"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3425",
+        "Seccion": "101",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-105"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3425",
+        "Seccion": "102",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-105"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3425",
+        "Seccion": "103",
+        "Profesor": "TBA",
+        "Nombre": "BIOL ORGANISMAL ANIMAL",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-105"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3576",
+        "Seccion": "0U1",
+        "Profesor": "MALDONADO, C. ",
+        "Nombre": "NEUROFARMACOLOGIA Y DROGA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-229"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "BIOL3705",
+        "Seccion": "0U1",
+        "Profesor": "BAYMAN/URDANETA",
+        "Nombre": "MICROBIOLOGIA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3705",
+        "Seccion": "101",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-341"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3705",
+        "Seccion": "102",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-341"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3705",
+        "Seccion": "103",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CN-341"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3705",
+        "Seccion": "104",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-341"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3705",
+        "Seccion": "105",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-341"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3705",
+        "Seccion": "106",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-341"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL3711",
+        "Seccion": "001",
+        "Profesor": "ROMAN, M. ",
+        "Nombre": "BIOLOGIA HUMANA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CN-340"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "BIOL3711",
+        "Seccion": "002",
+        "Profesor": "RIVERA, N. ",
+        "Nombre": "BIOLOGIA HUMANA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-340"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "BIOL4056",
+        "Seccion": "0U1",
+        "Profesor": "BORRERO, M. ",
+        "Nombre": "INMUNOLOGIA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-211"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4345",
+        "Seccion": "0U1",
+        "Profesor": "MASSEY/FALCON ",
+        "Nombre": "EVOLUCION",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-340"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4350",
+        "Seccion": "0U1",
+        "Profesor": "RAMIREZ, R. ",
+        "Nombre": "BIOLOGIA DE LA CELULA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4545",
+        "Seccion": "0U1",
+        "Profesor": "RDZ,J/BERNABE ",
+        "Nombre": "BIOQUIMICA DE LA CELULA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-142"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "001",
+        "Profesor": "RAMIREZ, R. ",
+        "Nombre": "BIOLOGIA GENERAL I",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "002",
+        "Profesor": "URDANETA/BAYMAN",
+        "Nombre": "MICROBIOLOGIA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "003",
+        "Profesor": "CINTRON ",
+        "Nombre": "TUTORIA EN BIOLOGIA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "005",
+        "Profesor": "NAZARIO, G. ",
+        "Nombre": "BIOL ORGANISMAL VEGETAL",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "006",
+        "Profesor": "JOGLAR, R. ",
+        "Nombre": "TUTORIA EN BIOLOGIA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "010",
+        "Profesor": "VIERA, J. ",
+        "Nombre": "TUTORIA EN BIOLOGIA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "019",
+        "Profesor": "AIDE/CUEVAS ",
+        "Nombre": "TUTORIA EN BIOLOGIA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "022",
+        "Profesor": "RAMIREZ, R. ",
+        "Nombre": "BIOLOGIA CELULAR",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "023",
+        "Profesor": "RODZ./BERNABE ",
+        "Nombre": "BIOQUIMICA DE LA CELULA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "024",
+        "Profesor": "BORRERO, M. ",
+        "Nombre": "IMMUNOLOGIA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "028",
+        "Profesor": "MASSEY/FALCON ",
+        "Nombre": "TUTORIA EN BIOLOGIA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4980",
+        "Seccion": "029",
+        "Profesor": "MALDONADO, C. ",
+        "Nombre": "TUTORIA EN BIOLOGIA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4990",
+        "Seccion": "011",
+        "Profesor": "PEREZ, O. ",
+        "Nombre": "INTROD A INVESTIGACION",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4990",
+        "Seccion": "012",
+        "Profesor": "PEREZ, O. ",
+        "Nombre": "INTROD A INVESTIGACION",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4990",
+        "Seccion": "013",
+        "Profesor": "PEREZ, O. ",
+        "Nombre": "INTROD A INVESTIGACION",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4999",
+        "Seccion": "303",
+        "Profesor": "RIVERA, N. ",
+        "Nombre": "TEMAS EN BIOLOGIA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-202"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4999",
+        "Seccion": "333",
+        "Profesor": "BERNABE, R. ",
+        "Nombre": "TEMAS EN BIOLOGIA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-211"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4999",
+        "Seccion": "383",
+        "Profesor": "GHEZZI, A. ",
+        "Nombre": "TEMAS EN BIOLOGIA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "JGD-123"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL4999",
+        "Seccion": "433",
+        "Profesor": "PETERSON, E. ",
+        "Nombre": "TEMAS EN BIOLOGIA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-207"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL5026",
+        "Seccion": "0U1",
+        "Profesor": "RIVERA, N. ",
+        "Nombre": "HISTOLOGIA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-237"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL5495",
+        "Seccion": "0U1",
+        "Profesor": "ACKERMAN/SANTIA",
+        "Nombre": "TAXONOM PLANTA FLORIFERA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "BIOL5548",
+        "Seccion": "0U1",
+        "Profesor": "GARCIA, J. ",
+        "Nombre": "NEUROBIOLOGIA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "JGD-123"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3020",
+        "Seccion": "0U1",
+        "Profesor": "RUBIO, I. ",
+        "Nombre": "MATEMATICAS DISCRETAS",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-143"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3030",
+        "Seccion": "001",
+        "Profesor": "ORDONEZ, P. ",
+        "Nombre": "INTROD A CIENCIA COMPUTOS",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-141"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3030",
+        "Seccion": "002",
+        "Profesor": "COLORADO, R. ",
+        "Nombre": "INTROD A CIENCIA COMPUTOS",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-143"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3030",
+        "Seccion": "003",
+        "Profesor": "TBA ",
+        "Nombre": "INTROD A CIENCIA COMPUTOS",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-143"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3030",
+        "Seccion": "004",
+        "Profesor": "LLUBERES, M ",
+        "Nombre": "INTROD A CIENCIA COMPUTOS",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-141"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3031",
+        "Seccion": "001",
+        "Profesor": "ORDONEZ, P. ",
+        "Nombre": "INTRO CIENCIAS DE DATOS",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "04:00PM-05:20PM"
+        ],
+        "Salones": [
+            "CNL-A-141"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3033",
+        "Seccion": "001",
+        "Profesor": "LLUBERES, M. ",
+        "Nombre": "INTRO A PROGR COMPUTADORA",
+        "Dias": [
+            "MJV"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-141"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3033",
+        "Seccion": "002",
+        "Profesor": "LLUBERES, M. ",
+        "Nombre": "INTRO A PROGR COMPUTADORA",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-141"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3034",
+        "Seccion": "0U1",
+        "Profesor": "ARCE, R ",
+        "Nombre": "ESTRUCTURA DE DATOS",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-143"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3981",
+        "Seccion": "001",
+        "Profesor": "ARCE, R ",
+        "Nombre": "SEMINARIO SUBGRADUADO I",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-141"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CCOM3981",
+        "Seccion": "002",
+        "Profesor": "RUBIO, I. ",
+        "Nombre": "SEMINARIO SUBGRADUADO I",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-143"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CCOM3986",
+        "Seccion": "023",
+        "Profesor": "ARCE, R. ",
+        "Nombre": "INV SUBG EN CIENCIA COMP",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3986",
+        "Seccion": "033",
+        "Profesor": "RUBIO,I. ",
+        "Nombre": "INV SUBG EN CIENCIA COMP",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3986",
+        "Seccion": "043",
+        "Profesor": "MARCANO, M. ",
+        "Nombre": "INV SUBG EN CIENCIA COMP",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3986",
+        "Seccion": "053",
+        "Profesor": "ORDONEZ, P ",
+        "Nombre": "INV SUBG EN CIENCIA COMP",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3986",
+        "Seccion": "063",
+        "Profesor": "OROZCO, E. ",
+        "Nombre": "INV SUBG EN CIENCIA COMP",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3986",
+        "Seccion": "073",
+        "Profesor": "ORTIZ, H. ",
+        "Nombre": "INV SUBG EN CIENCIA COMP",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3986",
+        "Seccion": "083",
+        "Profesor": "ORTIZ,J. ",
+        "Nombre": "INV SUBG EN CIENCIA COMP",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3986",
+        "Seccion": "093",
+        "Profesor": "CORRADA, C. ",
+        "Nombre": "INV SUBG EN CIENCIA COMP",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM3986",
+        "Seccion": "103",
+        "Profesor": "MEGRET, R. ",
+        "Nombre": "INV SUBG EN CIENCIA COMP",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM4017",
+        "Seccion": "0U1",
+        "Profesor": "ORTIZ, JOSE ",
+        "Nombre": "SISTEMAS OPERATIVOS",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-143"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CCOM4030",
+        "Seccion": "0U1",
+        "Profesor": "CORRADA BRAVO ",
+        "Nombre": "INGENIERIA DE SOFTWARE",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-114"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CCOM4065",
+        "Seccion": "0U1",
+        "Profesor": "MARCANO, M ",
+        "Nombre": "ALG LIN NUMERICA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-114"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CCOM4086",
+        "Seccion": "0U1",
+        "Profesor": "MEGRET, R ",
+        "Nombre": "ARQU DE COMPUTADORAS I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-141"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM4089",
+        "Seccion": "0U1",
+        "Profesor": "ORTIZ ZUAZAGA ",
+        "Nombre": "SEGURIDAD SISTEMAS Y REDE",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-114"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CCOM4205",
+        "Seccion": "0U1",
+        "Profesor": "CORRADA, C. ",
+        "Nombre": "REDES DE COMPUTADORAS",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CN-114"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CCOM4995",
+        "Seccion": "023",
+        "Profesor": "MEGRET, R. ",
+        "Nombre": "TEMAS CIENCIAS DE COMPUTO",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-114"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CCOM5035",
+        "Seccion": "0U1",
+        "Profesor": "OROZCO, E. ",
+        "Nombre": "TEORIA DE COMPUTABILIDAD",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-141"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CIAM4127",
+        "Seccion": "001",
+        "Profesor": "LOUIME, CLIFORD",
+        "Nombre": "TECNICAS AMBIENTALES",
+        "Dias": [
+            "M",
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM",
+            "02:00PM-05:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CIAM4127",
+        "Seccion": "002",
+        "Profesor": "TBA",
+        "Nombre": "TECNICAS AMBIENTALES",
+        "Dias": [
+            "J",
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM",
+            "02:00PM-05:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CIAM4127",
+        "Seccion": "101",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CIAM4127",
+        "Seccion": "102",
+        "Profesor": "TBA",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CIAM4990",
+        "Seccion": "101",
+        "Profesor": "ZIMMERMAN,JESS ",
+        "Nombre": "INVESTIGACION AMBIENTAL",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CIAM4990",
+        "Seccion": "202",
+        "Profesor": "ZIMMERMAN,JESS ",
+        "Nombre": "INVESTIGACION AMBIENTAL",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CIAM4990",
+        "Seccion": "303",
+        "Profesor": "ZIMMERMAN,JESS ",
+        "Nombre": "INVESTIGACION AMBIENTAL",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA3005",
+        "Seccion": "001",
+        "Profesor": "RIOS, RAFAEL ",
+        "Nombre": "INTROD CS AMBIENTALES",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "02:00PM-03:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA3005",
+        "Seccion": "002",
+        "Profesor": "YU, MEI ",
+        "Nombre": "INTROD CS AMBIENTALES",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-340"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA3005",
+        "Seccion": "003",
+        "Profesor": "DVORSKY,E. ",
+        "Nombre": "INTROD CS AMBIENTALES",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "04:00PM-05:20PM"
+        ],
+        "Salones": [
+            "CNL-C-236"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA3128",
+        "Seccion": "0U1",
+        "Profesor": "MARTINEZ,JOSE ",
+        "Nombre": "PLANIF,REGUL RECURS NAT",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "04:00PM-05:50PM"
+        ],
+        "Salones": [
+            "CNL-C-212"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA4071",
+        "Seccion": "0U1",
+        "Profesor": "VELEZ, J ",
+        "Nombre": "SEM:CIENCIAS AMBIENTAL I",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "12:00PM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-C-236"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CINA4147",
+        "Seccion": "001",
+        "Profesor": "RIOS,RAFAEL ",
+        "Nombre": "GEOFISICA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "04:00PM-05:20PM"
+        ],
+        "Salones": [
+            "CNL-C-221"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CINA4147",
+        "Seccion": "0U1",
+        "Profesor": "ZOU, XIAOMING ",
+        "Nombre": "GEOFISICA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA4157",
+        "Seccion": "0U1",
+        "Profesor": "ORTIZ,JORGE ",
+        "Nombre": "REC TERREST,ACUAT DE PR.",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-C-236"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA4177",
+        "Seccion": "0U1",
+        "Profesor": "RIOS,RAFAEL ",
+        "Nombre": "RECURS AIRE,MANEJO,MANT",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "11:00AM-01:00PM"
+        ],
+        "Salones": [
+            "CNL-C-221"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "023",
+        "Profesor": "TBA",
+        "Nombre": "TEMAS ESCOGID CS.AMBIENT",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "033",
+        "Profesor": "MORENO,GABRIEL ",
+        "Nombre": "TEMAS ESCOGID CS.AMBIENT",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "043",
+        "Profesor": "PEREZ, OMAR ",
+        "Nombre": "TEMAS ESCOGID CS.AMBIENT",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "09:00AM-11:50AM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "053",
+        "Profesor": "LONGO, JOSE ",
+        "Nombre": "TEMAS ESCOGID CS.AMBIENT",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "073",
+        "Profesor": "MELENDEZ, ELVIA",
+        "Nombre": "USO DRONES EVALUAC AMBIEN",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "103",
+        "Profesor": "RAMOS,JORGE ",
+        "Nombre": "SALUD Y SEGURD AMB OCUPAC",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "04:30PM-07:20PM"
+        ],
+        "Salones": [
+            "CNL-C-210"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "133",
+        "Profesor": "LONGO,JOSE ",
+        "Nombre": "TEMAS ESCOGID CS.AMBIENT",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "213",
+        "Profesor": "ROMAN,GLENDA ",
+        "Nombre": "TEMAS ESCOGID CS.AMBIENT",
+        "Dias": [
+            "LM"
+        ],
+        "Horario": [
+            "05:00PM-06:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "323",
+        "Profesor": "MAYOL, OLGA ",
+        "Nombre": "TEMAS ESCOGID CS.AMBIENT",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "333",
+        "Profesor": "LOBATO, MIGUEL ",
+        "Nombre": "SEM INNOV ASP PRACT COMER",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA4995",
+        "Seccion": "413",
+        "Profesor": "HERNANDEZ,EDWIN",
+        "Nombre": "TEMAS ESCOGID CS.AMBIENT",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-C-202"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CINA4997",
+        "Seccion": "011",
+        "Profesor": "MORENO, GABRIEL",
+        "Nombre": "INVESTIGACION",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "11:30AM-12:20PM"
+        ],
+        "Salones": [
+            "CN-114"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CINA4997",
+        "Seccion": "013",
+        "Profesor": "TBA",
+        "Nombre": "INVESTIGACION",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CINA5990",
+        "Seccion": "033",
+        "Profesor": "GAO,QUION ",
+        "Nombre": "TEMAS CIENCIA MAT O TECN",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CNL-C-233"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CNEI3005",
+        "Seccion": "0U1",
+        "Profesor": "ALTSCHULER, D. ",
+        "Nombre": "CIENCIA-PSEUDOCIENCIA",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CN-354"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CNEI4011",
+        "Seccion": "001",
+        "Profesor": "HERNANDEZ,EDWIN",
+        "Nombre": "INTEG INTERDISCIP I",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-354"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CNEI4011",
+        "Seccion": "002",
+        "Profesor": "ORBEGOSO,VICTOR",
+        "Nombre": "INTEG INTERDISCIP I",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-354"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CNEI4011",
+        "Seccion": "003",
+        "Profesor": "ALVAREZ,JAVIER ",
+        "Nombre": "INTEG INTERDISCIP I",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "05:00PM-06:20PM"
+        ],
+        "Salones": [
+            "CN-354"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "CNEI4012",
+        "Seccion": "0U1",
+        "Profesor": "PEREZ REYES, OM",
+        "Nombre": "INTEG INTERDISCIP II",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "09:00AM-10:50AM"
+        ],
+        "Salones": [
+            "CNL-C-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "CNEI4085",
+        "Seccion": "0U1",
+        "Profesor": "MORENO, GABRIEL",
+        "Nombre": "INTEG CIENTIFICO-HUMANIST",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CNL-C-212"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "FISI3011",
+        "Seccion": "001",
+        "Profesor": "MARTINEZ, A. ",
+        "Nombre": "FISICA UNIVERSITARIA I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-233"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3011",
+        "Seccion": "002",
+        "Profesor": "ORBEGOSO, V. ",
+        "Nombre": "FISICA UNIVERSITARIA I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-233"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3011",
+        "Seccion": "003",
+        "Profesor": "UBRIACO, M. ",
+        "Nombre": "FISICA UNIVERSITARIA I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-233"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3011",
+        "Seccion": "004",
+        "Profesor": "NIEVES, JOSE F.",
+        "Nombre": "FISICA UNIVERSITARIA I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "05:30PM-06:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3011",
+        "Seccion": "005",
+        "Profesor": "BHUIYAN, LUTFUL",
+        "Nombre": "FISICA UNIVERSITARIA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-236"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3011",
+        "Seccion": "006",
+        "Profesor": "VELEV, JULIAN ",
+        "Nombre": "FISICA UNIVERSITARIA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-227"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3011",
+        "Seccion": "007",
+        "Profesor": "BHUIYAN, L.B. ",
+        "Nombre": "FISICA UNIVERSITARIA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-229"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3011",
+        "Seccion": "008",
+        "Profesor": "UBRIACO, M. ",
+        "Nombre": "FISICA UNIVERSITARIA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-227"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3011",
+        "Seccion": "009",
+        "Profesor": "VELEV, J. ",
+        "Nombre": "FISICA UNIVERSITARIA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-229"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3012",
+        "Seccion": "001",
+        "Profesor": "ALIEV, FOUAD M.",
+        "Nombre": "FISICA UNIVERSITARIA II",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3012",
+        "Seccion": "002",
+        "Profesor": "ORBEGOSO, V. ",
+        "Nombre": "FISICA UNIVERSITARIA II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-C-206"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3012",
+        "Seccion": "003",
+        "Profesor": "FONSECA, LUIS ",
+        "Nombre": "FISICA UNIVERSITARIA II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-231"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3012",
+        "Seccion": "004",
+        "Profesor": "VELEV, J. ",
+        "Nombre": "FISICA UNIVERSITARIA II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-206"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3012",
+        "Seccion": "005",
+        "Profesor": "ORBEGOSO, V. ",
+        "Nombre": "FISICA UNIVERSITARIA II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CN-354"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3012",
+        "Seccion": "006",
+        "Profesor": "FONSECA, L. ",
+        "Nombre": "FISICA UNIVERSITARIA II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-231"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "001",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-318"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "002",
+        "Profesor": "FENG, XIANPING ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "003",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-318"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "004",
+        "Profesor": "FENG, XIANPING ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "005",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-318"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "006",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-321"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "007",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-318"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "008",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-321"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "009",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-318"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "010",
+        "Profesor": "FENG, XIANPING ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "011",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-318"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "012",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-321"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "013",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-318"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "014",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-318"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3013",
+        "Seccion": "015",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT I",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-318"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3014",
+        "Seccion": "001",
+        "Profesor": "FENG, XIANPING ",
+        "Nombre": "LAB DE FISI UNIVERSIT II",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3014",
+        "Seccion": "002",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT II",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-324"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3014",
+        "Seccion": "003",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT II",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-324"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3014",
+        "Seccion": "004",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT II",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-324"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3014",
+        "Seccion": "005",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT II",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-324"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3014",
+        "Seccion": "006",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT II",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-324"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3014",
+        "Seccion": "007",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT II",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-324"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3014",
+        "Seccion": "008",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT II",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-324"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3014",
+        "Seccion": "009",
+        "Profesor": "FENG, X. ",
+        "Nombre": "LAB DE FISI UNIVERSIT II",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-324"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3016",
+        "Seccion": "0U1",
+        "Profesor": "MARTINEZ, A. ",
+        "Nombre": "FISICA MODERNA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-311"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "FISI3025",
+        "Seccion": "0U1",
+        "Profesor": "SELSBY, RONALD ",
+        "Nombre": "FISICA MODERNA ELEMENTAL",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI3171",
+        "Seccion": "0U1",
+        "Profesor": "SELSBY, RONALD ",
+        "Nombre": "FISICA I",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-339"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "FISI3173",
+        "Seccion": "001",
+        "Profesor": "ALIEV, F. ",
+        "Nombre": "LAB DE FISICA I",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-321"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "FISI3173",
+        "Seccion": "002",
+        "Profesor": "ALIEV, F. .",
+        "Nombre": "LAB DE FISICA I",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-321"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "FISI4031",
+        "Seccion": "0U1",
+        "Profesor": "UBRIACO ",
+        "Nombre": "MET DE FISICA MATEMATICA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-311"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "FISI4046",
+        "Seccion": "0U1",
+        "Profesor": "FONSECA, L. ",
+        "Nombre": "ELEMEN MECANICA CUANTICA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-312"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "FISI4051",
+        "Seccion": "0U1",
+        "Profesor": "SELSBY, R. ",
+        "Nombre": "MECANICA INTERMEDIA I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-C-311"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "FISI4058",
+        "Seccion": "001",
+        "Profesor": "MORELL, GERARDO",
+        "Nombre": "INVESTIGACION NO GRADUAD",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI4058",
+        "Seccion": "002",
+        "Profesor": "UBRIACO, M. ",
+        "Nombre": "INVESTIGACION NO GRADUAD",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI4058",
+        "Seccion": "004",
+        "Profesor": "PANTOJA, C. ",
+        "Nombre": "INVESTIGACION NO GRADUAD",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI4058",
+        "Seccion": "006",
+        "Profesor": "NIEVES, JOSE F.",
+        "Nombre": "INVESTIGACION NO GRADUAD",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI4058",
+        "Seccion": "007",
+        "Profesor": "SELSBY, RONALD ",
+        "Nombre": "INVESTIGACION NO GRADUAD",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "FISI4068",
+        "Seccion": "0U1",
+        "Profesor": "BHUIYAN, L.B. ",
+        "Nombre": "ELECTROMAGNETISMO I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-C-312"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "FISI4076",
+        "Seccion": "0U1",
+        "Profesor": "PALAI, R. ",
+        "Nombre": "LABORAT INTERMEDIO I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-05:20PM"
+        ],
+        "Salones": [
+            "CNL-C-340"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "001",
+        "Profesor": "AYUDANTE CATEDR",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "07:00AM-07:50AM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "002",
+        "Profesor": "VELEZ, D. ",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "08:00AM-08:50AM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "003",
+        "Profesor": "TBA ",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "09:00AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "004",
+        "Profesor": "PROGRAMA PSAE ",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "005",
+        "Profesor": "AYUDANTE CATEDR",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "006",
+        "Profesor": "AYUDANTE CATEDR",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "007",
+        "Profesor": "AYUDANTE CATEDR",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "LV"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "008",
+        "Profesor": "APONTE, J. ",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "009",
+        "Profesor": "RODILLA L., F. ",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "010",
+        "Profesor": "HERNANDEZ, L. ",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:00AM-09:20AM"
+        ],
+        "Salones": [
+            "CNL-A-309"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "011",
+        "Profesor": "AYUDANTE CATEDR",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "07:00AM-08:20AM"
+        ],
+        "Salones": [
+            "CNL-A-231"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "012",
+        "Profesor": "AYUDANTE CATEDR",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "08:00AM-08:50AM"
+        ],
+        "Salones": [
+            "CN-339"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "013",
+        "Profesor": "SEOANES, F. ",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-225"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "014",
+        "Profesor": "SEOANES, F. ",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "015",
+        "Profesor": "APONTE, J. ",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "09:00AM-10:20AM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3001",
+        "Seccion": "901",
+        "Profesor": "SANTACRUZ, N. ",
+        "Nombre": "MATEMATICA INTRODUCTORIA ",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "07:30PM-08:50PM"
+        ],
+        "Salones": [
+            "AJBR-304"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3018",
+        "Seccion": "001",
+        "Profesor": "PENNANCE, P. ",
+        "Nombre": "PREP CALCUL,GEOM ANALIT",
+        "Dias": [
+            "LW",
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM",
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-C-202",
+            "CNL-A-226"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3019",
+        "Seccion": "0U1",
+        "Profesor": "RODRIGUEZ, M. ",
+        "Nombre": "GEOMETRIA DE COLEGIO",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "MATE3026",
+        "Seccion": "001",
+        "Profesor": "SOSA, R. ",
+        "Nombre": "INTROD ESTA CON COMPUTAD",
+        "Dias": [
+            "L",
+            "WJV"
+        ],
+        "Horario": [
+            "07:00AM-08:50AM",
+            "07:00AM-07:50AM"
+        ],
+        "Salones": [
+            "CNL-A-209",
+            "CNL-A-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3026",
+        "Seccion": "002",
+        "Profesor": "SOSA, R. ",
+        "Nombre": "INTROD ESTA CON COMPUTAD",
+        "Dias": [
+            "WJV",
+            "M"
+        ],
+        "Horario": [
+            "08:00AM-08:50AM",
+            "07:00AM-08:50AM"
+        ],
+        "Salones": [
+            "CNL-A-209",
+            "CNL-A-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3026",
+        "Seccion": "003",
+        "Profesor": "SOSA, R. ",
+        "Nombre": "INTROD ESTA CON COMPUTAD",
+        "Dias": [
+            "W",
+            "LV"
+        ],
+        "Horario": [
+            "09:00AM-10:50AM",
+            "09:00AM-10:20AM"
+        ],
+        "Salones": [
+            "CNL-A-209",
+            "CNL-A-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3026",
+        "Seccion": "004",
+        "Profesor": "NGUYEN, N.T. ",
+        "Nombre": "INTROD ESTA CON COMPUTAD",
+        "Dias": [
+            "MJ",
+            "L"
+        ],
+        "Horario": [
+            "09:00AM-10:50AM",
+            "10:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-209",
+            "CNL-A-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3026",
+        "Seccion": "005",
+        "Profesor": "NGUYEN, N.T. ",
+        "Nombre": "INTROD ESTA CON COMPUTAD",
+        "Dias": [
+            "LMJ",
+            "V"
+        ],
+        "Horario": [
+            "11:30AM-12:20PM",
+            "11:00AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-209",
+            "CNL-A-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3026",
+        "Seccion": "006",
+        "Profesor": "NGUYEN, N.T. ",
+        "Nombre": "INTROD ESTA CON COMPUTAD",
+        "Dias": [
+            "LM",
+            "J"
+        ],
+        "Horario": [
+            "12:30PM-01:50PM",
+            "12:30PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-209",
+            "CNL-A-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3026",
+        "Seccion": "007",
+        "Profesor": "DE JESUS, J.F. ",
+        "Nombre": "INTROD ESTA CON COMPUTAD",
+        "Dias": [
+            "LMV",
+            "W"
+        ],
+        "Horario": [
+            "02:00PM-02:50PM",
+            "01:00PM-02:50PM"
+        ],
+        "Salones": [
+            "CNL-A-209",
+            "CNL-A-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3026",
+        "Seccion": "008",
+        "Profesor": "DE JESUS, J. ",
+        "Nombre": "INTROD ESTA CON COMPUTAD",
+        "Dias": [
+            "LMJ",
+            "W"
+        ],
+        "Horario": [
+            "03:00PM-03:50PM",
+            "03:00PM-04:50PM"
+        ],
+        "Salones": [
+            "CNL-A-209",
+            "CNL-A-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3026",
+        "Seccion": "009",
+        "Profesor": "NIEBLES, R. ",
+        "Nombre": "INTROD ESTA CON COMPUTAD",
+        "Dias": [
+            "LM",
+            "J"
+        ],
+        "Horario": [
+            "04:30PM-05:50PM",
+            "04:30PM-06:20PM"
+        ],
+        "Salones": [
+            "CNL-A-209",
+            "CNL-A-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3036",
+        "Seccion": "0U1",
+        "Profesor": "QUINTERO, A.H. ",
+        "Nombre": "CONCEPT FUNDAM MATE",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-C-210"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3040",
+        "Seccion": "0U1",
+        "Profesor": "SEPULVEDA, L. ",
+        "Nombre": "TEORIA DE NUMEROS I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "04:00PM-05:20PM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3041",
+        "Seccion": "0U1",
+        "Profesor": "QUINTERO, A.H. ",
+        "Nombre": "INTROD A MATEMATICA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-339"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3042",
+        "Seccion": "0U1",
+        "Profesor": "SEPULVEDA, L. ",
+        "Nombre": "INTROD A MATEMATICA II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-C-210"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3070",
+        "Seccion": "0U1",
+        "Profesor": "FIGUEROA, R. ",
+        "Nombre": "SEMINARIO SUBGRADUADO I",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "10:00AM-10:50AM"
+        ],
+        "Salones": [
+            "CNL-A-225"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3105",
+        "Seccion": "001",
+        "Profesor": "JIMENEZ, L. ",
+        "Nombre": "APRECIACION MATEMATICAS",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "08:00AM-08:50AM"
+        ],
+        "Salones": [
+            "CNL-A-207"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3105",
+        "Seccion": "002",
+        "Profesor": "JIMENEZ, L. ",
+        "Nombre": "APRECIACION MATEMATICAS",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "09:00AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-207"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3105",
+        "Seccion": "003",
+        "Profesor": "EMAMY, M-R ",
+        "Nombre": "APRECIACION MATEMATICAS",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "02:00PM-03:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3105",
+        "Seccion": "004",
+        "Profesor": "VELAZQUEZ, I. ",
+        "Nombre": "APRECIACION MATEMATICAS",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-207"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3105",
+        "Seccion": "005",
+        "Profesor": "SEPULVEDA, L. ",
+        "Nombre": "APRECIACION MATEMATICAS",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-207"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3105",
+        "Seccion": "006",
+        "Profesor": "SEPULVEDA, L. ",
+        "Nombre": "APRECIACION MATEMATICAS",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "03:00PM-04:20PM"
+        ],
+        "Salones": [
+            "CNL-A-207"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3131",
+        "Seccion": "800",
+        "Profesor": "TBA",
+        "Nombre": "CONCEP FUND ARITM,ALGEB",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3151",
+        "Seccion": "001",
+        "Profesor": "PUNCHIN, J. ",
+        "Nombre": "CALCULO I",
+        "Dias": [
+            "LW",
+            "MJ"
+        ],
+        "Horario": [
+            "07:00AM-07:50AM",
+            "07:00AM-08:20AM"
+        ],
+        "Salones": [
+            "CNL-C-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3151",
+        "Seccion": "002",
+        "Profesor": "PUNCHIN, J. ",
+        "Nombre": "CALCULO I",
+        "Dias": [
+            "LW",
+            "MJ"
+        ],
+        "Horario": [
+            "08:00AM-09:20AM",
+            "08:30AM-09:20AM"
+        ],
+        "Salones": [
+            "CNL-C-206"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3151",
+        "Seccion": "003",
+        "Profesor": "VELAZQUEZ, I. ",
+        "Nombre": "CALCULO I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "07:00AM-09:20AM"
+        ],
+        "Salones": [
+            "CNL-C-206"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3151",
+        "Seccion": "004",
+        "Profesor": "FIGUEROA, R. ",
+        "Nombre": "CALCULO I",
+        "Dias": [
+            "LMWJV"
+        ],
+        "Horario": [
+            "08:00AM-08:50AM"
+        ],
+        "Salones": [
+            "CNL-C-211"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3151",
+        "Seccion": "005",
+        "Profesor": "CARDONA, I. ",
+        "Nombre": "CALCULO I",
+        "Dias": [
+            "LW",
+            "MJ"
+        ],
+        "Horario": [
+            "09:00AM-10:20AM",
+            "09:00AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-C-204",
+            "CNL-C-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3151",
+        "Seccion": "006",
+        "Profesor": "GUAN, P. ",
+        "Nombre": "CALCULO I",
+        "Dias": [
+            "LW",
+            "V"
+        ],
+        "Horario": [
+            "02:00PM-03:20PM",
+            "02:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-C-211",
+            "CNL-C-211"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3151",
+        "Seccion": "007",
+        "Profesor": "GONG, G. ",
+        "Nombre": "CALCULO I",
+        "Dias": [
+            "LW",
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:20PM",
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-C-210",
+            "CNL-C-210"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3151",
+        "Seccion": "008",
+        "Profesor": "LI, L. ",
+        "Nombre": "CALCULO I",
+        "Dias": [
+            "LV",
+            "W"
+        ],
+        "Horario": [
+            "04:00PM-05:20PM",
+            "04:00PM-05:50PM"
+        ],
+        "Salones": [
+            "CNL-A-227",
+            "CNL-A-227"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3151",
+        "Seccion": "009",
+        "Profesor": "RODILLA, F. ",
+        "Nombre": "CALCULO I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "03:00PM-05:20PM"
+        ],
+        "Salones": [
+            "CNL-C-202"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3151",
+        "Seccion": "2U1",
+        "Profesor": "RODILLA, F. ",
+        "Nombre": "CALCULO I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "05:30PM-07:50PM"
+        ],
+        "Salones": [
+            "CNL-C-202"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3152",
+        "Seccion": "001",
+        "Profesor": "FIGUEROA, R. ",
+        "Nombre": "CALCULO II",
+        "Dias": [
+            "LMWJV"
+        ],
+        "Horario": [
+            "09:00AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-C-202"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3152",
+        "Seccion": "002",
+        "Profesor": "CARDONA, I. ",
+        "Nombre": "CALCULO II",
+        "Dias": [
+            "LW",
+            "MJ"
+        ],
+        "Horario": [
+            "07:00AM-08:20AM",
+            "07:00AM-07:50AM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3152",
+        "Seccion": "003",
+        "Profesor": "PUNCHIN, J. ",
+        "Nombre": "CALCULO II",
+        "Dias": [
+            "LW",
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-10:50AM",
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-211",
+            "CNL-C-211"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3153",
+        "Seccion": "0U1",
+        "Profesor": "PENNANCE, P. ",
+        "Nombre": "CALCULO III",
+        "Dias": [
+            "LW",
+            "MJ"
+        ],
+        "Horario": [
+            "02:00PM-03:20PM",
+            "02:30PM-03:20PM"
+        ],
+        "Salones": [
+            "CNL-C-206",
+            "CNL-C-206"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "001",
+        "Profesor": "VELAZQUEZ, I. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "07:00AM-08:20AM"
+        ],
+        "Salones": [
+            "CNL-A-226"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "002",
+        "Profesor": "SEPULVEDA, L. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "08:00AM-08:50AM"
+        ],
+        "Salones": [
+            "CNL-A-226"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "003",
+        "Profesor": "VELAZQUEZ, I. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-227"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "004",
+        "Profesor": "JIMENEZ, L. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM"
+        ],
+        "Salones": [
+            "CNL-A-227"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "005",
+        "Profesor": "SEPULVEDA, L. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "LV"
+        ],
+        "Horario": [
+            "02:00PM-03:20PM"
+        ],
+        "Salones": [
+            "CNL-A-227"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "006",
+        "Profesor": "APONTE, J. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-225"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "007",
+        "Profesor": "SHAN, L. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-226"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "008",
+        "Profesor": "PENNANCE, P. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-226"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "009",
+        "Profesor": "SHAN, L. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-207"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "010",
+        "Profesor": "APONTE, J. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-C-202"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "011",
+        "Profesor": "SEPULVEDA, L. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "07:00AM-07:50AM"
+        ],
+        "Salones": [
+            "CNL-C-202"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "012",
+        "Profesor": "VELAZQUEZ, I. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "LV"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-227"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3171",
+        "Seccion": "013",
+        "Profesor": "JIMENEZ, L. ",
+        "Nombre": "PRE-CALCULO I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3172",
+        "Seccion": "001",
+        "Profesor": "APONTE, J. ",
+        "Nombre": "PRE-CALCULO II",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "08:00AM-08:50AM"
+        ],
+        "Salones": [
+            "CNL-C-212"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3172",
+        "Seccion": "002",
+        "Profesor": "APONTE, J. ",
+        "Nombre": "PRE-CALCULO II",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "09:00AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-C-212"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3172",
+        "Seccion": "003",
+        "Profesor": "JIMENEZ, L. ",
+        "Nombre": "PRE-CALCULO II",
+        "Dias": [
+            "LWV"
+        ],
+        "Horario": [
+            "10:00AM-10:50AM"
+        ],
+        "Salones": [
+            "CNL-A-207"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3172",
+        "Seccion": "004",
+        "Profesor": "DE JESUS, J. ",
+        "Nombre": "PRE-CALCULO II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-225"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3172",
+        "Seccion": "005",
+        "Profesor": "JIMENEZ, L. ",
+        "Nombre": "PRE-CALCULO II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-A-225"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3172",
+        "Seccion": "006",
+        "Profesor": "SEOANES, F. ",
+        "Nombre": "PRE-CALCULO II",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "04:00PM-05:20PM"
+        ],
+        "Salones": [
+            "CNL-C-212"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE3325",
+        "Seccion": "0U1",
+        "Profesor": "FIGUEROA, R. ",
+        "Nombre": "INTR MATEMATICAS DISCRETA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-229"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE4009",
+        "Seccion": "0U1",
+        "Profesor": "NGUYEN, S.L. ",
+        "Nombre": "ECUACION DIFER ORDINARIA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-225"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE4031",
+        "Seccion": "0U1",
+        "Profesor": "GUAN, P. ",
+        "Nombre": "ALGEBRA LINEAL",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-04:00PM"
+        ],
+        "Salones": [
+            "CNL-A-226"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE4045",
+        "Seccion": "0U1",
+        "Profesor": "WARMA, M. ",
+        "Nombre": "ECUACION DIFEREN PARCIAL",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-210"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "MATE4080",
+        "Seccion": "0U1",
+        "Profesor": "DE JESUS, J. ",
+        "Nombre": "ALGEBRA MODERNA APLICADA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-210"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "MATE4081",
+        "Seccion": "0U1",
+        "Profesor": "EMAMY, M-R. ",
+        "Nombre": "ALGEBRA SUPERIOR I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-226"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE4120",
+        "Seccion": "0U1",
+        "Profesor": "RODRIGUEZ, M. ",
+        "Nombre": "HISTORIA DE MATEMATICA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-224"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE4996",
+        "Seccion": "013",
+        "Profesor": "TBA",
+        "Nombre": "ESTUD INDEPEND SUBGRAD",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "MATE5001",
+        "Seccion": "0U1",
+        "Profesor": "PERICCHI, L. ",
+        "Nombre": "PROBABILIDAD I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "04:30PM-05:50PM"
+        ],
+        "Salones": [
+            "CNL-C-212"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "MATE5201",
+        "Seccion": "0U1",
+        "Profesor": "SHAN, L. ",
+        "Nombre": "CALCULO AVANZADO I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-C-210"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "METE3901",
+        "Seccion": "0U1",
+        "Profesor": "MORELL, G. ",
+        "Nombre": "MICROSATELITES I",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "05:30PM-08:20PM"
+        ],
+        "Salones": [
+            "CNL-C-334"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4031",
+        "Seccion": "0U1",
+        "Profesor": "CRUZ, A. ",
+        "Nombre": "CIENCIA DE LOS ALIMENTOS",
+        "Dias": [
+            "L",
+            "W"
+        ],
+        "Horario": [
+            "09:30AM-12:20PM",
+            "09:30AM-11:20AM"
+        ],
+        "Salones": [
+            "ED-105",
+            "ED-105"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4041",
+        "Seccion": "0U1",
+        "Profesor": "TBA",
+        "Nombre": "NUTRICION HUMANA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "09:00AM-10:50AM"
+        ],
+        "Salones": [
+            "ED-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4042",
+        "Seccion": "0U1",
+        "Profesor": "CORREA, N. ",
+        "Nombre": "NUTRICION HUMANA II",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:00AM-09:50AM"
+        ],
+        "Salones": [
+            "ED-205"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4045",
+        "Seccion": "0U1",
+        "Profesor": "TBA",
+        "Nombre": "NUTR HUMANA APLICADA I",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "05:00PM-06:50PM"
+        ],
+        "Salones": [
+            "ED-105"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4055",
+        "Seccion": "0U1",
+        "Profesor": "TBA",
+        "Nombre": "COMPRA ALI SIST SERV",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "02:00PM-04:50PM"
+        ],
+        "Salones": [
+            "ED-205"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4068",
+        "Seccion": "0U1",
+        "Profesor": "TBA",
+        "Nombre": "DISEN FACIL, COMPRA EQUIP",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "02:00PM-04:50PM"
+        ],
+        "Salones": [
+            "ED-109"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4075",
+        "Seccion": "0U1",
+        "Profesor": "TBA",
+        "Nombre": "ADMI SIST SERV ALIMENTOS",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "03:00PM-04:50PM"
+        ],
+        "Salones": [
+            "ED-109"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "NUTR4076",
+        "Seccion": "0U1",
+        "Profesor": "TORO, B. ",
+        "Nombre": "APL CONCEPT ADM SERV ALIM",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-02:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4085",
+        "Seccion": "302",
+        "Profesor": "TBA",
+        "Nombre": "PRODUCCION ALIMENTOS",
+        "Dias": [
+            "S"
+        ],
+        "Horario": [
+            "01:00PM-05:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4085",
+        "Seccion": "3U1",
+        "Profesor": "TBA",
+        "Nombre": "PRODUCCION",
+        "Dias": [
+            "S"
+        ],
+        "Horario": [
+            "07:00AM-11:50AM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4086",
+        "Seccion": "0U1",
+        "Profesor": "TORO, BRENDA ",
+        "Nombre": "MENU SIST SERV ALIMENTOS",
+        "Dias": [
+            "M",
+            "J"
+        ],
+        "Horario": [
+            "09:00AM-11:50AM",
+            "09:00AM-10:50AM"
+        ],
+        "Salones": [
+            "ED-109",
+            "ED-109"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4158",
+        "Seccion": "0U1",
+        "Profesor": "SCHELSKE, M. ",
+        "Nombre": "BIOQUIMICA HUMANA",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "ED-205"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4159",
+        "Seccion": "0U1",
+        "Profesor": "SCHELSKE, M. ",
+        "Nombre": "LABORATORIO BIOQU HUMANA",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "NEP-577"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4165",
+        "Seccion": "0U1",
+        "Profesor": "VICENS, L. ",
+        "Nombre": "DIETETICA CLINICA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:50AM"
+        ],
+        "Salones": [
+            "ED-109"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4166",
+        "Seccion": "0U1",
+        "Profesor": "CORREA, N. ",
+        "Nombre": "DIETETICA CLIN AVANZADA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:50PM"
+        ],
+        "Salones": [
+            "ED-205"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4169",
+        "Seccion": "0U1",
+        "Profesor": "VICENS, L. ",
+        "Nombre": "DIETETICA CLINICA APLICAD",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "02:00PM-03:50PM"
+        ],
+        "Salones": [
+            "ED-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4170",
+        "Seccion": "0U1",
+        "Profesor": "CRUZ,ANNABEL ",
+        "Nombre": "METOD ENSEN DE NUTRICION",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:50PM"
+        ],
+        "Salones": [
+            "ED-105"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "NUTR4175",
+        "Seccion": "002",
+        "Profesor": "TBA",
+        "Nombre": "PRACTICA",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "09:00AM-11:50AM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4175",
+        "Seccion": "0U1",
+        "Profesor": "CRUZ, A. ",
+        "Nombre": "PRACTICA ENS NUTRICION",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "09:00AM-11:50AM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4176",
+        "Seccion": "0U1",
+        "Profesor": "MIR, C ",
+        "Nombre": "NUTRICION EN LA COMUNIDAD",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "03:00PM-04:50PM"
+        ],
+        "Salones": [
+            "ED-205"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4198",
+        "Seccion": "0U1",
+        "Profesor": "PINTO E. ",
+        "Nombre": "METODOS INV EN NUTR",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "ED-207"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4225",
+        "Seccion": "0U1",
+        "Profesor": "MIR, C. ",
+        "Nombre": "ASPEC PROF DE NUTR Y DIET",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "05:00PM-06:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4501",
+        "Seccion": "0U1",
+        "Profesor": "CORREA, NANCY ",
+        "Nombre": "NUTRICION INTEGRATIVA I",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "04:00PM-04:50PM"
+        ],
+        "Salones": [
+            "ED-205"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4502",
+        "Seccion": "0U1",
+        "Profesor": "FERNANDEZ,N. ",
+        "Nombre": "NUTRICION INTEGRATIVA II",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "05:00PM-05:50PM"
+        ],
+        "Salones": [
+            "ED-205"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR4503",
+        "Seccion": "0U1",
+        "Profesor": "TBA",
+        "Nombre": "NUTRICION",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "04:00PM-04:50PM"
+        ],
+        "Salones": [
+            "ED-205"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "NUTR5997",
+        "Seccion": "2U1",
+        "Profesor": "PEREZ, CARMEN ",
+        "Nombre": "TEMAS CONT ALIMENTOS NUTR",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "05:30PM-08:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "001",
+        "Profesor": "MOTTA, N. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-231"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "002",
+        "Profesor": "DAVILA, K. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CN-338"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "003",
+        "Profesor": "MOTTA, N. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-231"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "004",
+        "Profesor": "DAVILA, K. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-338"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "005",
+        "Profesor": "DAVILA, K. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-338"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "006",
+        "Profesor": "ECHEGARAY, F. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-A-308"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "007",
+        "Profesor": "BERNAL,C. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "07:00AM-08:20AM"
+        ],
+        "Salones": [
+            "CN-354"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "008",
+        "Profesor": "FLORES, R. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CN-339"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "009",
+        "Profesor": "ECHEGARAY, F. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-308"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "010",
+        "Profesor": "WEINER, B. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-339"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "011",
+        "Profesor": "MORALES, A. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-308"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "012",
+        "Profesor": "DAVILA, K. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "11:30AM-12:50PM"
+        ],
+        "Salones": [
+            "CN-338"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "013",
+        "Profesor": "CARRASQUILLO, J",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-338"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "014",
+        "Profesor": "FLORES, R. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-339"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "015",
+        "Profesor": "MOTTA, N. ",
+        "Nombre": "QUIMICA GENERAL I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-338"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "101",
+        "Profesor": "VELAZQUEZ, B. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "102",
+        "Profesor": "BERNAL, C. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-203"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "103",
+        "Profesor": "BERNAL, C. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-203"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "104",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "105",
+        "Profesor": "FELICIANO, I. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "106",
+        "Profesor": "BERNAL, C. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-203"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "107",
+        "Profesor": "CARRASQUILLO,J.",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "108",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-203"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "109",
+        "Profesor": "CARRASQUILLO,J.",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "110",
+        "Profesor": "FELICIANO, I. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "111",
+        "Profesor": "VELAZQUEZ, B. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "112",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-203"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "113",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-203"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "114",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "115",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "116",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-203"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "117",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "118",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "119",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-203"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "120",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "121",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "122",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-203"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "123",
+        "Profesor": "VELAZQUEZ, B. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "124",
+        "Profesor": "CARRASQUILLO,J.",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-204"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3001",
+        "Seccion": "125",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-203"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3015",
+        "Seccion": "0U1",
+        "Profesor": "TORRES, G. ",
+        "Nombre": "COMPENDIO QUIM ORGANICA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CN-354"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3015",
+        "Seccion": "101",
+        "Profesor": "TORRES, G. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-104"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3015",
+        "Seccion": "102",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "001",
+        "Profesor": "TORRES, G. ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:00AM-09:50AM"
+        ],
+        "Salones": [
+            "CN-251"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "002",
+        "Profesor": "MUNOZ, L. ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:50PM"
+        ],
+        "Salones": [
+            "CN-251"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "003",
+        "Profesor": "RIVERA, JOSE ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "03:00PM-04:50PM"
+        ],
+        "Salones": [
+            "CN-251"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "004",
+        "Profesor": "RIVERA, L. ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:00AM-09:50AM"
+        ],
+        "Salones": [
+            "CN-338"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "005",
+        "Profesor": "MUNOZ, L ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-10:20AM"
+        ],
+        "Salones": [
+            "CN-251"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "006",
+        "Profesor": "BETANCOURT, R. ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:30AM-12:20PM"
+        ],
+        "Salones": [
+            "CN-251"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "007",
+        "Profesor": "TORRES, G. ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "12:30PM-02:20PM"
+        ],
+        "Salones": [
+            "CN-251"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "008",
+        "Profesor": "MUNOZ, L. ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:50PM"
+        ],
+        "Salones": [
+            "CN-354"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "009",
+        "Profesor": "RIVERA, L. ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "02:30PM-04:20PM"
+        ],
+        "Salones": [
+            "CN-251"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "010",
+        "Profesor": "MUNOZ, L. ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:00AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-308"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "101",
+        "Profesor": "FAJARDO, J. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-102"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "102",
+        "Profesor": "RIVERA, L. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-104"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "103",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-101"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "104",
+        "Profesor": "RIVERA, L. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-102"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "105",
+        "Profesor": "FAJARDO, J. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-104"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "106",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-101"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "107",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-102"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "108",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-101"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "109",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-102"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "110",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-102"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "111",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-101"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "112",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-102"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "113",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-101"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "114",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-102"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3031",
+        "Seccion": "115",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-101"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "001",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM"
+        ],
+        "Salones": [
+            "CNL-C-209"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "002",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM"
+        ],
+        "Salones": [
+            "CNL-C-211"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "003",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "02:30PM-03:20PM"
+        ],
+        "Salones": [
+            "CNL-C-212"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "004",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM"
+        ],
+        "Salones": [
+            "CNL-C-211"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "005",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM"
+        ],
+        "Salones": [
+            "CNL-C-212"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "006",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM"
+        ],
+        "Salones": [
+            "CNL-C-210"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "007",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "02:30PM-03:20PM"
+        ],
+        "Salones": [
+            "CNL-C-209"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "008",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM"
+        ],
+        "Salones": [
+            "CNL-C-209"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "009",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "02:30PM-03:20PM"
+        ],
+        "Salones": [
+            "CN-338"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "010",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-01:50PM"
+        ],
+        "Salones": [
+            "CNL-C-210"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "011",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "02:30PM-03:20PM"
+        ],
+        "Salones": [
+            "CNL-C-209"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "012",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "10:00AM-10:50AM"
+        ],
+        "Salones": [
+            "CNL-C-210"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "013",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "10:00AM-10:50AM"
+        ],
+        "Salones": [
+            "CN-338"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3073",
+        "Seccion": "014",
+        "Profesor": "TBA ",
+        "Nombre": "MENTORIAS EN QUIMICA I",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "10:00AM-10:50AM"
+        ],
+        "Salones": [
+            "CNL-C-209"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3255",
+        "Seccion": "0U1",
+        "Profesor": "GUADALUPE, A. ",
+        "Nombre": "ANALISIS QUIMICO I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-340"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3255",
+        "Seccion": "101",
+        "Profesor": "DIAZ, I/ ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-11:20AM"
+        ],
+        "Salones": [
+            "CN-306"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3255",
+        "Seccion": "102",
+        "Profesor": "DIAZ, I./ ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-306"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3451",
+        "Seccion": "0U1",
+        "Profesor": "MONTES, I. ",
+        "Nombre": "QUIMICA ORGANICA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CN-340"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM3451",
+        "Seccion": "101",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J",
+            "M"
+        ],
+        "Horario": [
+            "12:00PM-12:50PM",
+            "01:00PM-04:50PM"
+        ],
+        "Salones": [
+            "CNL-A-231",
+            "CN-102"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3451",
+        "Seccion": "102",
+        "Profesor": "FAJARDO. J. ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J",
+            "M"
+        ],
+        "Horario": [
+            "12:00PM-12:50PM",
+            "01:00PM-04:50PM"
+        ],
+        "Salones": [
+            "CNL-A-231",
+            "CN-104"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3451",
+        "Seccion": "103",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M",
+            "J"
+        ],
+        "Horario": [
+            "12:00PM-12:50PM",
+            "01:00PM-04:50PM"
+        ],
+        "Salones": [
+            "CNL-A-231",
+            "CN-102"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM3451",
+        "Seccion": "104",
+        "Profesor": "TBA ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M",
+            "J"
+        ],
+        "Horario": [
+            "12:00PM-12:50PM",
+            "01:00PM-04:50PM"
+        ],
+        "Salones": [
+            "CNL-A-231",
+            "CN-104"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4000",
+        "Seccion": "0U1",
+        "Profesor": "TINOCO, A. ",
+        "Nombre": "QUIMICA INORGANICA",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-C-202"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4015",
+        "Seccion": "0U1",
+        "Profesor": "DIAZ, L. ",
+        "Nombre": "QUIM ANALITICA INSTRUMEN",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "10:00AM-11:20AM"
+        ],
+        "Salones": [
+            "CNL-A-229"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4015",
+        "Seccion": "101",
+        "Profesor": "MORALES/ ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-303"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4015",
+        "Seccion": "102",
+        "Profesor": "MORALES/ ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CN-303"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4025",
+        "Seccion": "0U1",
+        "Profesor": "RODRIGUEZ, A. ",
+        "Nombre": "METODOS DE QUIM ORGANICA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-C-209"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM4041",
+        "Seccion": "001",
+        "Profesor": "BAYRO, M. ",
+        "Nombre": "QUIMICA FISICA I",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CNL-A-231"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM4041",
+        "Seccion": "100",
+        "Profesor": "BAYRO, M. ",
+        "Nombre": "CONFERENCIA",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "10:00AM-10:50AM"
+        ],
+        "Salones": [
+            "CNL-A-231"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4041",
+        "Seccion": "200",
+        "Profesor": "BAYRO, M. ",
+        "Nombre": "CONFERENCIA",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "10:00AM-10:50AM"
+        ],
+        "Salones": [
+            "CNL-A-226"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4043",
+        "Seccion": "001",
+        "Profesor": "TORRES, C. ",
+        "Nombre": "LABORATORIO INTERMED I",
+        "Dias": [
+            "V"
+        ],
+        "Horario": [
+            "12:00PM-12:50PM"
+        ],
+        "Salones": [
+            "CNL-A-231"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM4043",
+        "Seccion": "101",
+        "Profesor": "QUINONES/ ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "L"
+        ],
+        "Horario": [
+            "01:00PM-04:50PM"
+        ],
+        "Salones": [
+            "CN-301"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4043",
+        "Seccion": "102",
+        "Profesor": "TORRES/ ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "M"
+        ],
+        "Horario": [
+            "01:00PM-04:50PM"
+        ],
+        "Salones": [
+            "CN-301"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4043",
+        "Seccion": "103",
+        "Profesor": "FELICIANO/ ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "W"
+        ],
+        "Horario": [
+            "01:00PM-04:50PM"
+        ],
+        "Salones": [
+            "CN-301"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4043",
+        "Seccion": "104",
+        "Profesor": "TORRES/ ",
+        "Nombre": "LABORATORIO",
+        "Dias": [
+            "J"
+        ],
+        "Horario": [
+            "01:00PM-04:50PM"
+        ],
+        "Salones": [
+            "CN-301"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4055",
+        "Seccion": "0U1",
+        "Profesor": "FLORES, R. ",
+        "Nombre": "BIOQUIMICA",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "08:30AM-09:50AM"
+        ],
+        "Salones": [
+            "CN-340"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4117",
+        "Seccion": "0U1",
+        "Profesor": "DIAZ, L. ",
+        "Nombre": "TUTORIA EN QUIMICA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4999",
+        "Seccion": "011",
+        "Profesor": "DIAZ, L. ",
+        "Nombre": "INVESTIG NO GRADUADA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4999",
+        "Seccion": "012",
+        "Profesor": "DIAZ, LIZ ",
+        "Nombre": "INVESTIG NO GRADUADA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM4999",
+        "Seccion": "013",
+        "Profesor": "DIAZ, L. ",
+        "Nombre": "INVESTIG NO GRADUADA",
+        "Dias": [
+            "D"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM5995",
+        "Seccion": "022",
+        "Profesor": "CARBALLEIRA, N.",
+        "Nombre": "REDACCION PERSUASIVA CIEN",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "05:00PM-06:20PM"
+        ],
+        "Salones": [
+            "CNL-C-209"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM5995",
+        "Seccion": "023",
+        "Profesor": "CARBALLEIRA, N.",
+        "Nombre": "QUIMICA MEDICINAL",
+        "Dias": [
+            "LW"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [
+            "CNL-C-212"
+        ],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM5995",
+        "Seccion": "032",
+        "Profesor": "PINERO/FERNANDE",
+        "Nombre": "TEMAS ESCOGIDOS EN QUIM",
+        "Dias": [
+            "L",
+            "W"
+        ],
+        "Horario": [
+            "11:30AM-12:20PM",
+            "01:00PM-03:50PM"
+        ],
+        "Salones": [
+            "CNL-C-209",
+            "CN-202"
+        ],
+        "Info_Extra": "* Curso no se ofrecer\u00e1 en el 2DO SEM *"
+    },
+    {
+        "Curso": "QUIM5995",
+        "Seccion": "043",
+        "Profesor": "MAYOL, O. ",
+        "Nombre": "QUIMICA AMBIENTAL",
+        "Dias": [
+            "MJ"
+        ],
+        "Horario": [
+            "01:00PM-02:20PM"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    },
+    {
+        "Curso": "QUIM5995",
+        "Seccion": "183",
+        "Profesor": "TINOCO, A. ",
+        "Nombre": "QUIMICA PROGRAMA REU",
+        "Dias": [
+            "TBA"
+        ],
+        "Horario": [
+            "TBA"
+        ],
+        "Salones": [],
+        "Info_Extra": ""
+    }
+]
