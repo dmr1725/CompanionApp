@@ -1,8 +1,8 @@
 import os, sys
 import json
 
-path1 = "C:/Users/diego/Documents/companion_app3/primer_sem"
-path2 = "C:/Users/diego/Documents/companion_app3/segundo_sem"
+path1 = "C:/Users/diego/Documents/companion_app_gh/primer_sem"
+path2 = "C:/Users/diego/Documents/companion_app_gh/segundo_sem"
 
 dirs1 = os.listdir(path1)
 dirs2 = os.listdir(path2)

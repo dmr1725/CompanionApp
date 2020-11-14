@@ -1,6 +1,7 @@
 import sys
 import json
-sys.path.insert(1,'C:/Users/diego/Documents/companion_app3/organizar/')
+sys.path.insert(1,'C:/Users/diego/Documents/companion_app_gh/organizar/')
+
 
 from organizar import files3
 
@@ -14,7 +15,7 @@ from rest_framework.parsers import JSONParser
 from rest_framework import status
  
 from .models import Facultad, Curso
-from .serializers import FacultadSerializer, CursoSerializer, MatriculaSerializer
+from .serializers import FacultadSerializer, CursoSerializer
 from rest_framework.decorators import api_view
 
 # clientID: 965339169610-8et02d4qpfk96vclngd0otths1rs8661.apps.googleusercontent.com
@@ -46,7 +47,7 @@ def insertarTodosLosCursos(request):
         i = 1
         for file in files3:
             check = file['file'].split('.')
-            path = "C:/Users/diego/Documents/companion_app3/segundo_sem" if check[0][-1] == '2' else "C:/Users/diego/Documents/companion_app3/primer_sem"
+            path = "C:/Users/diego/Documents/companion_app_gh/segundo_sem" if check[0][-1] == '2' else "C:/Users/diego/Documents/companion_app_gh/primer_sem"
             with open(path + '/' + file['file']) as f:
                 data = json.load(f)
                 fac_id = file['num']
@@ -69,14 +70,14 @@ def insertarTodosLosCursos(request):
                             i += 1
         return JsonResponse({'message': 'se insertaron todos los cursos'}, status=status.HTTP_201_CREATED)
 
-@api_view(['POST',])
-def matricula(request):
-    if request.method == 'POST':
-        matricula_serializer = MatriculaSerializer(data = {'course_id': request.data['course_id_id'], 'section': request.data['section'], 'prof': request.data['prof'], 'semestre': request.data['semestre']})
-        if matricula_serializer.is_valid():
-            matricula_serializer.save()
-            return JsonResponse({'message': 'se inserto matricula'})
-        return JsonResponse({'message': 'error'})
+# @api_view(['POST',])
+# def matricula(request):
+#     if request.method == 'POST':
+#         matricula_serializer = MatriculaSerializer(data = {'course_id': request.data['course_id_id'], 'section': request.data['section'], 'prof': request.data['prof'], 'semestre': request.data['semestre']})
+#         if matricula_serializer.is_valid():
+#             matricula_serializer.save()
+#             return JsonResponse({'message': 'se inserto matricula'})
+#         return JsonResponse({'message': 'error'})
 
 
 

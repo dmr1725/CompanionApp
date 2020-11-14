@@ -31,7 +31,7 @@ export default function App() {
         console.log(result.accessToken)
 
         try {
-          let response = await fetch('http://619835f05c38.ngrok.io/rest-auth/google/', {
+          let response = await fetch('http://6bbd7a12b6b8.ngrok.io/rest-auth/google/', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'
