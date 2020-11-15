@@ -9,6 +9,8 @@ from organizar import files3
 from rest_auth.registration.views import SocialLoginView
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
 
+from django.db import connection
+
 
 from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser 
@@ -70,16 +72,109 @@ def insertarTodosLosCursos(request):
                             i += 1
         return JsonResponse({'message': 'se insertaron todos los cursos'}, status=status.HTTP_201_CREATED)
 
-# @api_view(['POST',])
-# def matricula(request):
-#     if request.method == 'POST':
-#         matricula_serializer = MatriculaSerializer(data = {'course_id': request.data['course_id_id'], 'section': request.data['section'], 'prof': request.data['prof'], 'semestre': request.data['semestre']})
-#         if matricula_serializer.is_valid():
-#             matricula_serializer.save()
-#             return JsonResponse({'message': 'se inserto matricula'})
-#         return JsonResponse({'message': 'error'})
+
+@api_view(['PATCH',])
+def updateFaculty(request):
+    if request.method == 'PATCH':
+        # params from request
+        fac_id = int(request.data['fac_id_id'])
+        user_id = int(request.data['id'])
+
+        # update faculty
+        cursor = connection.cursor()
+        cursor.execute(f'UPDATE "CompanionApp_user" set fac_id_id = {fac_id} where id = {user_id}')
+        return JsonResponse({'list': 'updated'}, status=status.HTTP_201_CREATED)
 
 
+
+@api_view(['GET',])
+def findCourse(request):
+    # alternative to cursor
+    # courses = Curso.objects.filter(code__contains=course_code)
+    # courses = list(courses.values())
+    if request.method == 'GET':
+        course_code = request.data['code'].upper()
+        cursor = connection.cursor()
+        cursor.execute(f'SELECT id, code from "CompanionApp_curso" where code LIKE \'{course_code}%\'  ')
+        courses = cursor.fetchall()
+        return JsonResponse({'list': courses}, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+def addTakenCourse(request):
+    if request.method == 'POST':
+        # request params
+        user_id = int(request.data['user_id'])
+        course_code = request.data['code'].upper()
+        grade = request.data['grade'].upper()
+        year = int(request.data['year'])
+        semester = int(request.data['semester'])
+        fecha = request.data['fecha']
+        repeating = False
+        print(type(grade))
+
+        # set point of grade
+        points = 0
+        if grade == 'A':
+            points = 4
+        elif grade == 'B':
+            points = 3
+        elif grade == 'C':
+            points = 2
+        elif grade == 'D':
+            points = 1
+        elif grade == 'F':
+            points = 0
+        else:
+            return JsonResponse({'msg': 'Insert A, B, C, D or F' }, status=status.HTTP_406_NOT_ACCEPTABLE)
+
+        # find course id and credits
+        cursor = connection.cursor()
+        cursor.execute(f'Select id, creditos from "CompanionApp_curso" where code =\'{course_code}\' ')
+        course = cursor.fetchone()
+        course_id = int(course[0])
+        creditos = int(course[1])
+
+        # check if student already took that class in the same year and semester he/she is trying to post
+        cursor = connection.cursor()
+        cursor.execute(f'select semestre, year, grade, course_id_id from "CompanionApp_matricula" where semestre = {semester} and year = {year} and course_id_id = {course_id} and user_id_id = {user_id}')
+        check = cursor.fetchone()
+        check = list(check)
+        print(check)
+        if int(check[0]) == semester and int(check[1]) == year and check[3] == course_id:
+            return JsonResponse({'msg': 'You already took the course that year and semester.' }, status=status.HTTP_406_NOT_ACCEPTABLE)
+        elif int(check[1]) != year:
+            pass
+        elif int(check[1] == year) and int(check[0]) != semester:
+            pass
+          
+        # matricular al estudiante
+        cursor = connection.cursor()
+        cursor.execute(f'INSERT INTO "CompanionApp_matricula" (semestre, year, fecha, grade, user_id_id, course_id_id) VALUES ({semester}, {year}, \'{fecha}\', \'{grade}\', {user_id}, {course_id})')
+
+        # find credits taken
+        cursor = connection.cursor()
+        cursor.execute(f'Select credits_taken from "CompanionApp_user" where id={user_id}')
+        credits_taken = cursor.fetchone()
+        credits_taken = int(credits_taken[0])
+        credits_taken += creditos
+        
+        # update credits taken
+        cursor = connection.cursor()
+        cursor.execute(f'UPDATE "CompanionApp_user" set credits_taken = {credits_taken} where id ={user_id}')
+
+        credit_score = credits_taken * 4
+        credits_taken_score = credits_taken * points
+  
+ 
+        # set GPA and insert it in user
+        gpa = (credits_taken_score / credit_score) * 4.0
+        gpa = float("{:.2f}".format(gpa))
+        cursor = connection.cursor()
+        cursor.execute(f'UPDATE "CompanionApp_user" set gpa = {gpa} where id={user_id}')
+        
+        return JsonResponse({'list': 'se matriculo al estudiante'}, status=status.HTTP_201_CREATED)
+        
 
 
 @api_view(['GET', 'POST'])

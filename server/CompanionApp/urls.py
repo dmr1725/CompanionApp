@@ -10,6 +10,9 @@ urlpatterns = [
     url(r'^api/insertar_fac$', views.insertarFacultades),
     url(r'^api/hello$', views.hello_world),
     url(r'^api/insertar_cursos$', views.insertarTodosLosCursos),
-    # url(r'^api/insert_matricula$', views.matricula)
+    url(r'^api/update_faculty$', views.updateFaculty),
+    url(r'^api/find_course$', views.findCourse),
+    url(r'^api/add_taken_course$', views.addTakenCourse)
+
 ]
 
