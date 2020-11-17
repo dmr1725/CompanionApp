@@ -11,7 +11,6 @@ from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
 
 from django.db import connection
 
-
 from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser 
 from rest_framework import status
@@ -73,12 +72,15 @@ def insertarTodosLosCursos(request):
         return JsonResponse({'message': 'se insertaron todos los cursos'}, status=status.HTTP_201_CREATED)
 
 
+
 @api_view(['PATCH',])
 def updateFaculty(request):
     if request.method == 'PATCH':
         # params from request
         fac_id = int(request.data['fac_id_id'])
         user_id = int(request.data['id'])
+        print(type(fac_id))
+        print('backend', fac_id)
 
         # update faculty
         cursor = connection.cursor()
@@ -86,7 +88,7 @@ def updateFaculty(request):
         return JsonResponse({'list': 'updated'}, status=status.HTTP_201_CREATED)
 
 
-
+# find courses in our Curso table
 @api_view(['GET',])
 def findCourse(request):
     # alternative to cursor
@@ -174,7 +176,31 @@ def addTakenCourse(request):
         cursor.execute(f'UPDATE "CompanionApp_user" set gpa = {gpa} where id={user_id}')
         
         return JsonResponse({'list': 'se matriculo al estudiante'}, status=status.HTTP_201_CREATED)
-        
+
+
+@api_view(['GET'])
+def getUserId(request):
+    if request.method == 'GET':
+        authorization = request.META.get('HTTP_AUTHORIZATION')
+        authorization = authorization.split()
+        token = authorization[1]
+        cursor = connection.cursor()
+        cursor.execute(f'SELECT user_id from "authtoken_token" where key = \'{token}\'')
+        user_id = cursor.fetchone()
+        user_id = user_id[0]
+        return JsonResponse({'user_id': user_id}, status=status.HTTP_200_OK)
+
+
+@api_view(['GET'])
+def getFacultyUser(request):
+    if request.method == 'GET':
+        print(request.query_params)
+        user_id = request.query_params['id']
+        user_id = int(user_id)
+        cursor = connection.cursor()
+        cursor.execute(f'select fname from "CompanionApp_facultad" where id in (select fac_id_id from "CompanionApp_user" where id={user_id})')
+        facultyName = cursor.fetchone()
+        return JsonResponse({'FacultyName': facultyName}, status=status.HTTP_200_OK)
 
 
 @api_view(['GET', 'POST'])

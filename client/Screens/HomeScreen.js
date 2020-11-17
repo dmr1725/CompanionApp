@@ -1,13 +1,28 @@
 import * as React from 'react';
 import { Button, View } from 'react-native';
 import * as SecureStore from 'expo-secure-store';
+import Axios from 'axios';
 
 
 function HomeScreen({ navigation }) {
   const credentials = async ()=>{
-    const response = await SecureStore.getItemAsync('token')
-    console.log(response)
+    const token = await SecureStore.getItemAsync('token')
+    const id = await SecureStore.getItemAsync('id')
+    console.log(token, id)
+
+    let response = await Axios({
+      url: 'http://6bb3aa0484d5.ngrok.io/api/hello',
+      method: 'GET',
+      headers: {
+          Authorization: `Token ${token}`
+      }
+    })
+
+    console.log(response.data.msg)
   }
+
+  
+  
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Button

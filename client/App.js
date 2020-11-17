@@ -31,7 +31,8 @@ export default function App() {
         console.log(result.accessToken)
 
         try {
-          let response = await fetch('http://6bbd7a12b6b8.ngrok.io/rest-auth/google/', {
+          // login user in backend
+          let response = await fetch('http://6bb3aa0484d5.ngrok.io/rest-auth/google/', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'
@@ -40,6 +41,8 @@ export default function App() {
               access_token: `${result.accessToken}`
             })
           })
+
+          // storing our token
           let responseJson = await response.json()
           if (responseJson){
             if (responseJson.key){
@@ -47,9 +50,29 @@ export default function App() {
             }
           }
 
+          const token = await SecureStore.getItemAsync('token')
+
+          // storing our id
+          let id = await fetch('http://6bb3aa0484d5.ngrok.io/api/get_user_id', {
+            method: 'GET',
+            headers: {
+              'content-type': 'application/json',
+              Authorization: `Token ${token}`
+            }
+          })
+          let idJson = await id.json()
+          if (idJson){
+            if(idJson.user_id){
+              idJson = idJson.user_id
+              let id = idJson.toString()
+              await SecureStore.setItemAsync('id', id)
+            }
+          }
+
         } catch(error){
           console.log(error)
         }
+
         setHasToken(true) // update states and redirect
       }
 
@@ -67,7 +90,7 @@ export default function App() {
       </View>
     );
   }
-  console.log(hasToken)
+
   return (
     <NavigationContainer>
         <Drawer.Navigator initialRouteName="Home">
