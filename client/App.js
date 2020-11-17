@@ -10,7 +10,7 @@ import * as SecureStore from 'expo-secure-store';
 import HomeScreen from './Screens/HomeScreen'
 import NotificationsScreen from './Screens/NotificationScreen'
 import SettingScreen from './Screens/SettingScreen'
-import AddTakenCourses from './Screens/AddTakenCourses'
+import AddTakenCourse from './Screens/AddTakenCourse'
 
 const Drawer = createDrawerNavigator()
 
@@ -32,7 +32,7 @@ export default function App() {
 
         try {
           // login user in backend
-          let response = await fetch('http://6bb3aa0484d5.ngrok.io/rest-auth/google/', {
+          let response = await fetch('http://ef32e7a10841.ngrok.io/rest-auth/google/', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'
@@ -53,7 +53,7 @@ export default function App() {
           const token = await SecureStore.getItemAsync('token')
 
           // storing our id
-          let id = await fetch('http://6bb3aa0484d5.ngrok.io/api/get_user_id', {
+          let id = await fetch('http://ef32e7a10841.ngrok.io/api/get_user_id', {
             method: 'GET',
             headers: {
               'content-type': 'application/json',
@@ -97,7 +97,7 @@ export default function App() {
           <Drawer.Screen name="Home" component={HomeScreen}/>
           <Drawer.Screen name="Notifications" component={NotificationsScreen} />
           <Drawer.Screen name="Settings" component={SettingScreen} />
-          <Drawer.Screen name="Add Taken Courses" component={AddTakenCourses} />
+          <Drawer.Screen name="Add Taken Courses" component={AddTakenCourse} />
         </Drawer.Navigator>
     </NavigationContainer>
   )

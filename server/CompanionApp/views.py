@@ -91,14 +91,14 @@ def updateFaculty(request):
 # find courses in our Curso table
 @api_view(['GET',])
 def findCourse(request):
-    # alternative to cursor
-    # courses = Curso.objects.filter(code__contains=course_code)
-    # courses = list(courses.values())
+    # alternative to .filter
+    # cursor = connection.cursor()
+    # cursor.execute(f'SELECT id, code from "CompanionApp_curso" where code LIKE \'{course_code}%\' LIMIT 10')
+    # courses = cursor.fetchall()
     if request.method == 'GET':
-        course_code = request.data['code'].upper()
-        cursor = connection.cursor()
-        cursor.execute(f'SELECT id, code from "CompanionApp_curso" where code LIKE \'{course_code}%\'  ')
-        courses = cursor.fetchall()
+        course_code = request.query_params['code'].upper()
+        courses = Curso.objects.filter(code__contains=course_code)[:10]
+        courses = list(courses.values())
         return JsonResponse({'list': courses}, status=status.HTTP_200_OK)
 
 
