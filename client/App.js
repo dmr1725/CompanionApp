@@ -11,7 +11,7 @@ import HomeScreen from './Screens/HomeScreen'
 import NotificationsScreen from './Screens/NotificationScreen'
 import SettingScreen from './Screens/SettingScreen'
 import AddTakenCourse from './Screens/AddTakenCourse'
-import ShowModal from './Screens/ShowModal'
+
 
 const Drawer = createDrawerNavigator()
 
@@ -99,7 +99,6 @@ export default function App() {
           <Drawer.Screen name="Notifications" component={NotificationsScreen} />
           <Drawer.Screen name="Settings" component={SettingScreen} />
           <Drawer.Screen name="Add Taken Courses" component={AddTakenCourse} />
-          <Drawer.Screen name="Modal" component={ShowModal} />
         </Drawer.Navigator>
     </NavigationContainer>
   )
