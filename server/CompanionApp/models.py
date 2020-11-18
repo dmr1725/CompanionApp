@@ -16,6 +16,7 @@ class User(AbstractUser):
     gpa = models.DecimalField(default = 0, max_digits = 3, decimal_places = 2)
     fac_id = models.ForeignKey(Facultad, on_delete=models.CASCADE, default=1)
     credits_taken = models.IntegerField(default=0)
+    credits_taken_score = models.IntegerField(default=0)
 
 class Matricula(models.Model):
     user_id = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
@@ -24,7 +25,7 @@ class Matricula(models.Model):
     prof = models.CharField(max_length=150, null=True, blank=True)
     semestre = models.IntegerField(default=0, null=False, blank=False)
     year = models.IntegerField(default=0, null=False, blank=False)
-    fecha = models.CharField(max_length=150, null=False, blank=True)
+    # fecha = models.CharField(max_length=150, null=False, blank=True)
     grade = models.CharField(max_length=3, default = 'N')
     salones =models.CharField(max_length=100,blank=True, null=True) 
     horarios =models.CharField(max_length=150,blank=True, null=True) 

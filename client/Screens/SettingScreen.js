@@ -15,7 +15,7 @@ export default function SettingScreen() {
         let user_id = parseInt(id)
 
        try {
-        let response = await axios(`http://ef32e7a10841.ngrok.io/api/get_faculty_name?id=${user_id}`, {
+        let response = await axios(`http://dfc5bdaab0ae.ngrok.io/api/get_faculty_name?id=${user_id}`, {
             method: 'GET',
             headers: {
                 'content-type': 'application/json',
@@ -43,7 +43,7 @@ export default function SettingScreen() {
         try {
             let response = await axios({
                 method: 'PATCH',
-                url: 'http://ef32e7a10841.ngrok.io/api/update_faculty',
+                url: 'http://dfc5bdaab0ae.ngrok.io/api/update_faculty',
                 headers: {
                     Authorization: `Token ${token}`
                 },
@@ -61,7 +61,6 @@ export default function SettingScreen() {
     console.log(faculty)
     return(
         <View style={styles.container}>
-            {/* <DisplayFaculty/> */}
             <View style={{textAlignVertical: 'top'}}>
                 <Text style={{ fontSize: 12, fontWeight: "bold" , height:30 }}>
                     You currently belong to the faculty: {currentFaculty}

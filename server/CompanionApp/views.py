@@ -107,13 +107,12 @@ def addTakenCourse(request):
     if request.method == 'POST':
         # request params
         user_id = int(request.data['user_id'])
-        course_code = request.data['code'].upper()
+        course_id = int(request.data['course_id'])
         grade = request.data['grade'].upper()
         year = int(request.data['year'])
         semester = int(request.data['semester'])
-        fecha = request.data['fecha']
         repeating = False
-        print(type(grade))
+        
 
         # set point of grade
         points = 0
@@ -130,46 +129,54 @@ def addTakenCourse(request):
         else:
             return JsonResponse({'msg': 'Insert A, B, C, D or F' }, status=status.HTTP_406_NOT_ACCEPTABLE)
 
-        # find course id and credits
+        # find course credits
         cursor = connection.cursor()
-        cursor.execute(f'Select id, creditos from "CompanionApp_curso" where code =\'{course_code}\' ')
+        cursor.execute(f'Select creditos from "CompanionApp_curso" where id = {course_id} ')
         course = cursor.fetchone()
-        course_id = int(course[0])
-        creditos = int(course[1])
+        creditos = int(course[0])
 
         # check if student already took that class in the same year and semester he/she is trying to post
         cursor = connection.cursor()
         cursor.execute(f'select semestre, year, grade, course_id_id from "CompanionApp_matricula" where semestre = {semester} and year = {year} and course_id_id = {course_id} and user_id_id = {user_id}')
         check = cursor.fetchone()
-        check = list(check)
-        print(check)
-        if int(check[0]) == semester and int(check[1]) == year and check[3] == course_id:
-            return JsonResponse({'msg': 'You already took the course that year and semester.' }, status=status.HTTP_406_NOT_ACCEPTABLE)
-        elif int(check[1]) != year:
-            pass
-        elif int(check[1] == year) and int(check[0]) != semester:
-            pass
-          
+        if check != None:
+            check = list(check)
+            if int(check[0]) == semester and int(check[1]) == year and check[3] == course_id:
+                return JsonResponse({'msg': 'You already took the course that year and semester.' }, status=status.HTTP_406_NOT_ACCEPTABLE)
+            elif int(check[1]) != year:
+                pass
+            elif int(check[1] == year) and int(check[0]) != semester:
+                pass
+            
         # matricular al estudiante
         cursor = connection.cursor()
-        cursor.execute(f'INSERT INTO "CompanionApp_matricula" (semestre, year, fecha, grade, user_id_id, course_id_id) VALUES ({semester}, {year}, \'{fecha}\', \'{grade}\', {user_id}, {course_id})')
+        cursor.execute(f'INSERT INTO "CompanionApp_matricula" (semestre, year, grade, user_id_id, course_id_id) VALUES ({semester}, {year}, \'{grade}\', {user_id}, {course_id})')
 
         # find credits taken
         cursor = connection.cursor()
         cursor.execute(f'Select credits_taken from "CompanionApp_user" where id={user_id}')
         credits_taken = cursor.fetchone()
         credits_taken = int(credits_taken[0])
-        credits_taken += creditos
-        
+
+        # find last credits_taken_score
+        cursor = connection.cursor()
+        cursor.execute(f'Select credits_taken_score from "CompanionApp_user" where id={user_id}')
+        credits_taken_score = cursor.fetchone()
+        credits_taken_score = int(credits_taken_score[0])
+
         # update credits taken
+        credits_taken += creditos
         cursor = connection.cursor()
         cursor.execute(f'UPDATE "CompanionApp_user" set credits_taken = {credits_taken} where id ={user_id}')
 
-        credit_score = credits_taken * 4
-        credits_taken_score = credits_taken * points
-  
+        # update credits_taken_score
+        credits_taken_score = credits_taken_score + (creditos * points)
+        cursor = connection.cursor()
+        cursor.execute(f'UPDATE "CompanionApp_user" set credits_taken_score = {credits_taken_score} where id ={user_id}')
+
  
         # set GPA and insert it in user
+        credit_score = credits_taken * 4
         gpa = (credits_taken_score / credit_score) * 4.0
         gpa = float("{:.2f}".format(gpa))
         cursor = connection.cursor()
@@ -211,3 +218,4 @@ def hello_world(request):
     return JsonResponse({'msg': 'no'})
 
 
+# delete course and update credits_taken
