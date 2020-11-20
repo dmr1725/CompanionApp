@@ -210,6 +210,40 @@ def getFacultyUser(request):
         return JsonResponse({'FacultyName': facultyName}, status=status.HTTP_200_OK)
 
 
+@api_view(['GET'])
+def getAllCoursesUserHasTaken(request):
+    if request.method == 'GET':
+        user_id = int(request.query_params['user_id'])
+        cursor = connection.cursor()
+        cursor.execute(f'SELECT c.name, c.code, c.creditos, m.user_id_id, m.year, m.semestre, m.grade FROM "CompanionApp_curso" c INNER JOIN "CompanionApp_matricula" m ON (c.id = m.course_id_id) where m.user_id_id = {user_id} and m.grade <> \'N%\' order by m.year ASC, m.semestre ASC')
+        fetchCourses = cursor.fetchall()
+        courses = []
+        # convert courses to an array of objects
+        for i in range(0, len(fetchCourses)):
+            dic = {'name': fetchCourses[i][0], 'code': fetchCourses[i][1], 'creditos': fetchCourses[i][2], 'year': fetchCourses[i][4], 'semestre': fetchCourses[i][5], 'grade': fetchCourses[i][6]}
+            courses.append(dic)
+
+        return JsonResponse({'list': courses}, status=status.HTTP_200_OK)
+
+@api_view(['GET'])
+def getAllCoursesBySemester(request):
+    if request.method == 'GET': 
+        user_id = int(request.query_params['user_id'])
+        year = int(request.query_params['year'])
+        semestre = int(request.query_params['semestre'])
+        cursor = connection.cursor()
+        cursor.execute(f'SELECT c.name, c.code, c.creditos, m.user_id_id, m.year, m.semestre, m.grade FROM "CompanionApp_curso" c INNER JOIN "CompanionApp_matricula" m ON (c.id = m.course_id_id) where m.user_id_id = {user_id} and m.year = {year} and m.semestre = {semestre} and m.grade <> \'N%\' ')
+        fetchCourses = cursor.fetchall()
+        courses = []
+
+        # convert courses to an array of objects
+        for i in range(0, len(fetchCourses)):
+            dic = {'name': fetchCourses[i][0], 'code': fetchCourses[i][1], 'creditos': fetchCourses[i][2], 'year': fetchCourses[i][4], 'semestre': fetchCourses[i][5], 'grade': fetchCourses[i][6]}
+            courses.append(dic)
+            
+        return JsonResponse({'list': courses}, status=status.HTTP_200_OK)
+
+
 @api_view(['GET', 'POST'])
 def hello_world(request):
     # if request.user.is_authenticated:

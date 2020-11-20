@@ -16,6 +16,8 @@ urlpatterns = [
     url('api/find_course', views.findCourse),
     url(r'^api/add_taken_course$', views.addTakenCourse),
     url(r'^api/get_user_id$', views.getUserId),
-    url('api/get_faculty_name', views.getFacultyUser)
+    url('api/get_faculty_name', views.getFacultyUser),
+    url('api/get_all_courses_user_has_taken', views.getAllCoursesUserHasTaken),
+    url('api/get_all_courses_by_semester', views.getAllCoursesBySemester)
 ]
 
