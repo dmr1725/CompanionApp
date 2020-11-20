@@ -15,7 +15,7 @@ export default function SettingScreen() {
         let user_id = parseInt(id)
 
        try {
-        let response = await axios(`http://dfc5bdaab0ae.ngrok.io/api/get_faculty_name?id=${user_id}`, {
+        let response = await axios(`http://a9e3ae82a86e.ngrok.io/api/get_faculty_name?id=${user_id}`, {
             method: 'GET',
             headers: {
                 'content-type': 'application/json',
@@ -43,7 +43,7 @@ export default function SettingScreen() {
         try {
             let response = await axios({
                 method: 'PATCH',
-                url: 'http://dfc5bdaab0ae.ngrok.io/api/update_faculty',
+                url: 'http://a9e3ae82a86e.ngrok.io/api/update_faculty',
                 headers: {
                     Authorization: `Token ${token}`
                 },
