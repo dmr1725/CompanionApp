@@ -51,7 +51,7 @@ const AddTakenCourse = () => {
 
       let response = await axios({
         method: 'POST',
-        url: 'http://a9e3ae82a86e.ngrok.io/api/add_taken_course',
+        url: 'http://230cd80ec7d6.ngrok.io/api/add_taken_course',
         headers: {
           'content-type': 'application/json',
           Authorization: `Token ${token}`
@@ -85,7 +85,7 @@ const AddTakenCourse = () => {
       const token = await SecureStore.getItemAsync('token')
       const response = await axios({
           method: 'GET',
-          url: `http://a9e3ae82a86e.ngrok.io/api/find_course?code=${text}`,
+          url: `http://230cd80ec7d6.ngrok.io/api/find_course?code=${text}`,
           headers: {
             'content-type': 'application/json',
             Authorization: `Token ${token}`

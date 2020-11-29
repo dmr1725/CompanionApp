@@ -244,6 +244,15 @@ def getAllCoursesBySemester(request):
         return JsonResponse({'list': courses}, status=status.HTTP_200_OK)
 
 
+@api_view(['POST',])
+def seeGPA(request):
+    if request.method == 'POST':
+        user_id = int(request.data['user_id'])
+        cursor = connection.cursor()
+        cursor.execute(f'SELECT gpa from "CompanionApp_user" where id={user_id}')
+        GPA = cursor.fetchone()
+        return JsonResponse({'gpa': GPA}, status = status.HTTP_200_OK)
+
 @api_view(['GET', 'POST'])
 def hello_world(request):
     # if request.user.is_authenticated:

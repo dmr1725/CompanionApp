@@ -7,11 +7,33 @@ import * as SecureStore from 'expo-secure-store';
 
 
 const MyCurriculum = () =>{
-    const [year, setYear] = useState(2)
+    const [year, setYear] = useState(1)
+    const [gpa, setGpa] = useState('')
     const [semester, setSemester] = useState(1)
     const [tableHead, setTableHead] = useState(['','Code', 'Title', 'Credits', 'Grade'])
     const [tableData, setTableData] = useState([])
     const [tableTitle, setTableTitle] = useState([])
+
+    const getMyGPA = async()=>{
+        const token = await SecureStore.getItemAsync('token')
+        let id = await SecureStore.getItemAsync('id')
+        let user_id = parseInt(id)
+
+        try {
+            let response = await axios('http://230cd80ec7d6.ngrok.io/api/see_gpa', {
+                method: 'POST',
+                headers: {
+                    Authorization: `Token ${token}`
+                },
+                data: {
+                    user_id: user_id
+                }
+            })
+            setGpa(response.data["gpa"][0])
+        } catch(e){
+            console.log(e)
+        }
+    }
 
     const getMyCurriculum = async()=>{
         const token = await SecureStore.getItemAsync('token')
@@ -21,7 +43,7 @@ const MyCurriculum = () =>{
         let numbers = []
 
         try {
-            let response = await axios(`http://a9e3ae82a86e.ngrok.io/api/get_all_courses_by_semester?user_id=${user_id}&year=${year}&semestre=${semester}`, {
+            let response = await axios(`http://230cd80ec7d6.ngrok.io/api/get_all_courses_by_semester?user_id=${user_id}&year=${year}&semestre=${semester}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -49,12 +71,15 @@ const MyCurriculum = () =>{
     }
 
     useEffect(()=>{
+        console.log('dimelo')
         getMyCurriculum()
-    }, [year, semester])
+        getMyGPA()
+    }, [year, semester, gpa])
 
 
     return (
         <View style={styles.container}>
+            <Text>Total GPA: {gpa}</Text>
             <Table borderStyle={{borderWidth: 2, borderColor: '#0f0f0f'}}>
                 <Row data={tableHead} flexArr={[0.9, 3.5, 10, 2.3, 2.3]} style={styles.head} textStyle={styles.text}/>
                 <TableWrapper style={styles.wrapper}>

@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'^api/get_user_id$', views.getUserId),
     url('api/get_faculty_name', views.getFacultyUser),
     url('api/get_all_courses_user_has_taken', views.getAllCoursesUserHasTaken),
-    url('api/get_all_courses_by_semester', views.getAllCoursesBySemester)
+    url('api/get_all_courses_by_semester', views.getAllCoursesBySemester),
+    url('api/see_gpa', views.seeGPA)
 ]
 
