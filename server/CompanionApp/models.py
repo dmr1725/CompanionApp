@@ -34,7 +34,7 @@ class Matricula(models.Model):
     dias =models.CharField(max_length=100,blank=True, null=True) 
 
 
-class ProxioSemestre(models.Model):
+class ProximoSemestre(models.Model):
     course_id = models.ForeignKey(Curso, on_delete=models.CASCADE, default=1)
     name = models.CharField(max_length=150)
     code = models.CharField(max_length=9)
