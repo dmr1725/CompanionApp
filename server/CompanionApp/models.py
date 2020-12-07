@@ -34,3 +34,13 @@ class Matricula(models.Model):
     dias =models.CharField(max_length=100,blank=True, null=True) 
 
 
+class ProxioSemestre(models.Model):
+    course_id = models.ForeignKey(Curso, on_delete=models.CASCADE, default=1)
+    name = models.CharField(max_length=150)
+    code = models.CharField(max_length=9)
+    creditos = models.IntegerField(default=0)
+    section = models.CharField(max_length=5, null=True, blank=True)
+    prof = models.CharField(max_length=150, null=True, blank=True)
+    hours =models.CharField(max_length=150,blank=True, null=True) 
+    days =models.CharField(max_length=100,blank=True, null=True) 
+    rooms =models.CharField(max_length=100,blank=True, null=True) 
