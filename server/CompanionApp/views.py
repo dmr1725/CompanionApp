@@ -48,7 +48,7 @@ def insertarTodosLosCursos(request):
         i = 1
         for file in files3:
             check = file['file'].split('.')
-            path = "C:/Users/diego/Documents/companion_app_gh/segundo_sem" if check[0][-1] == '2' else "C:/Users/diego/Documents/companion_app_gh/primer_sem"
+            path = "C:/Users/diego/Documents/companion_app/segundo_sem" if check[0][-1] == '2' else "C:/Users/diego/Documents/companion_app/primer_sem"
             with open(path + '/' + file['file']) as f:
                 data = json.load(f)
                 fac_id = file['num']
@@ -57,19 +57,40 @@ def insertarTodosLosCursos(request):
                         code = key
                         name = data[key][0]
                         creds = data[key][1]
-                        try: 
-                            curso = Curso.objects.get(code = code)
-                        except Curso.DoesNotExist:
-                            curso = None
+                        # si la clase es un laboratorio de 0 creditos
+                        if 'LAB' in key and (name == 'LABORATORIO' or name == 'LABORATORIO ' or name == 'TALLER' or name == 'TALLER ' or name == 'CONFERENCIA' or name == 'CONFERENCIA '):
+                            creds = 0
+                            try: 
+                                curso = Curso.objects.get(code = code)
+                            except Curso.DoesNotExist:
+                                curso = None
+
+                            if curso == None:
+                                curso_serializer = CursoSerializer(data={'name': name, 'code': code, 'creditos': creds, 'fac_id': fac_id})
+                                if curso_serializer.is_valid():
+                                    curso_serializer.save()
+                            else:
+                                print('ya se creo del lab', i)
+                                i += 1
+                        elif 'LAB in key' and (name != 'LABORATORIO' or name != 'LABORATORIO ' or name != 'TALLER' or name != 'TALLER ' or name != 'CONFERENCIA' or name != 'CONFERENCIA '):
+                            continue
                         
-                        if curso == None:
-                            curso_serializer = CursoSerializer(data={'name': name, 'code': code, 'creditos': creds, 'fac_id': fac_id})
-                            if curso_serializer.is_valid():
-                                curso_serializer.save()
+                        # todas las otras clases que no tengan _LAB en su codigo
                         else:
-                            print('ya se creo', i)
-                            i += 1
+                            try: 
+                                curso = Curso.objects.get(code = code)
+                            except Curso.DoesNotExist:
+                                curso = None
+                            
+                            if curso == None:
+                                curso_serializer = CursoSerializer(data={'name': name, 'code': code, 'creditos': creds, 'fac_id': fac_id})
+                                if curso_serializer.is_valid():
+                                    curso_serializer.save()
+                            else:
+                                print('ya se creo', i)
+                                i += 1
         return JsonResponse({'message': 'se insertaron todos los cursos'}, status=status.HTTP_201_CREATED)
+
 
 
 
