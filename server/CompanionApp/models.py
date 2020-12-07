@@ -17,6 +17,8 @@ class User(AbstractUser):
     fac_id = models.ForeignKey(Facultad, on_delete=models.CASCADE, default=1)
     credits_taken = models.IntegerField(default=0)
     credits_taken_score = models.IntegerField(default=0)
+    current_year = models.IntegerField(default=1)
+    current_semester = models.IntegerField(default=1)
 
 class Matricula(models.Model):
     user_id = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
