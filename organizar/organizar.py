@@ -38,18 +38,7 @@ files3 = orderFiles3(files1, files2, files3)
 
 
 
-# for file in files3:
-#     check = file['file'].split('.')
-#     path = "C:/Users/diego/Documents/companion_app/segundo_sem" if check[0][-1] == '2' else "C:/Users/diego/Documents/companion_app/primer_sem"
-#     with open(path + '/' + file['file']) as f:
-#         data = json.load(f)
-#         fac_id = file['num']
-#         for key in data:
-#             if key != 'Horario ':
-#                 code = key
-#                 name = data[key][0]
-#                 creds = data[key][1]
-#                 print(code, name, creds, fac_id)
+
                
             
     

@@ -30,7 +30,6 @@ def final_parse(name):
             pass
         else:
             course = {}
-
             course["Curso"] = item["Curso"][0:8]
             course["Seccion"] = item["Curso"][9:12]
 
@@ -39,26 +38,54 @@ def final_parse(name):
                 course["Profesor"] = profesor
             else:
                 course["Profesor"] = "TBA"
-
+            
+            course["Creditos"] = info[1][-1]
             course["Nombre"] = info[0][0:-1]
-            course["Dias"] = item["Dias"].split(" ")
 
-            horario = []
+            # bregando con dias
+            days = item["Dias"].split(" ")
+            for i in range(len(days)):
+                if i == 0:
+                    course["Dias"] = days[i]
+                else:
+                    course["Dias"] = course["Dias"] + ',' + days[i]
+
+            # si la clase es lab, conferencia o taller
+            if course["Nombre"] == 'CONFERENCIA' or course["Nombre"] == 'LABORATORIO' or course['Nombre'] == 'TALLER':
+                course["Curso"] += '_LAB'
+
+
+            
+            # bregando con el horario
             if(item["Hora"] != None):
-                for i in range(len(course["Dias"])):
-                    horario.append(item["Hora"][15*i:15*(i+1)])
+                if len(item["Hora"]) == 15:
+                    course["Horario"] = item["Hora"]
+                else:
+                    course["Horario"] = item["Hora"][0:15] + ',' + item["Hora"][15:30]
             else:
-                horario.append("TBA")
-            course["Horario"] = horario
+                course["Horario"] = "TBA"
+            
 
+            # bregando con salones
             salones_raw = item["Salon"].split("Edificio: ")
             salones = []
             for i in salones_raw:
                 if(i != "-" and i != "- " and i != ""):
                     salones.append(i[:-1])
-            course["Salones"] = salones
+            # una vez los tenga en un array, los voy a unir con una comma para poder insertarlos a la base de datos como datatype string
+            if len(salones) == 0:
+                course["Salones"] = "TBA"
+            else:
+                for i in range(len(salones)):
+                    if i == 0:
+                        course["Salones"] = salones[i]
+                    else:
+                        course["Salones"] = course["Salones"] + ',' + salones[i]
+            
+            print(course["Salones"])
+                
 
-            course["Info_Extra"] = item["Curso"][13:-1]
+            
 
             newdata.append(course)
 
@@ -72,19 +99,19 @@ if __name__ == "__main__":
                     "Admi_Grad": "https://miupi.uprrp.edu/horarios/RBA120_AE2.HTML",
                     "Arqui": "https://miupi.uprrp.edu/horarios/RBA120_AQ.HTML",
                     "Arqui_Grad": "https://miupi.uprrp.edu/horarios/RBA120_AQ2.HTML",
-                    "Ciencia_Tech_Info_Grad": "https://miupi.uprrp.edu/horarios/RBA120_CB.HTML",
+                    "Escuela_Grad_Ciencia_Tech_Info": "https://miupi.uprrp.edu/horarios/RBA120_CB.HTML",
                     "Ciencias_Militares": "https://miupi.uprrp.edu/horarios/RBA120_CM.HTML",
-                    "Naturales": "https://miupi.uprrp.edu/horarios/RBA120_CN.HTML",
-                    "Naturales_Grad": "https://miupi.uprrp.edu/horarios/RBA120_CN2.HTML",
+                    "Ciencias_Naturales": "https://miupi.uprrp.edu/horarios/RBA120_CN.HTML",
+                    "Ciencias_Naturales_Grad": "https://miupi.uprrp.edu/horarios/RBA120_CN2.HTML",
                     "Comunicaciones": "https://miupi.uprrp.edu/horarios/RBA120_CP.HTML",
                     "Comunicaciones_Grad": "https://miupi.uprrp.edu/horarios/RBA120_CP2.HTML",
-                    "Sociales": "https://miupi.uprrp.edu/horarios/RBA120_CS.HTML",
-                    "Sociales_Grad": "https://miupi.uprrp.edu/horarios/RBA120_CS2.HTML	",
-                    "Derecho": "https://miupi.uprrp.edu/horarios/RBA120_DE.HTML",
+                    "Ciencias_Sociales": "https://miupi.uprrp.edu/horarios/RBA120_CS.HTML",
+                    "Ciencias_Sociales_Grad": "https://miupi.uprrp.edu/horarios/RBA120_CS2.HTML	",
+                    "Escuela_Derecho": "https://miupi.uprrp.edu/horarios/RBA120_DE.HTML",
                     "Educacion_Continua": "https://miupi.uprrp.edu/horarios/RBA120_EC.HTML",
                     "Educacion": "https://miupi.uprrp.edu/horarios/RBA120_ED.HTML",
                     "Educacion_Grad": "https://miupi.uprrp.edu/horarios/RBA120_ED2.HTML",
-                    "Generales": "https://miupi.uprrp.edu/horarios/RBA120_EG.HTML",
+                    "Estudios_Generales": "https://miupi.uprrp.edu/horarios/RBA120_EG.HTML",
                     "Humanidades": "https://miupi.uprrp.edu/horarios/RBA120_HU.HTML",
                     "Humanidades_Grad": "https://miupi.uprrp.edu/horarios/RBA120_HU2.HTML",
                     "Planificacion": "https://miupi.uprrp.edu/horarios/RBA120_PL.HTML"}
