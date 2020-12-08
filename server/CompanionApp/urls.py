@@ -12,13 +12,14 @@ urlpatterns = [
     url(r'^api/hello$', views.hello_world),
     url(r'^api/insertar_cursos$', views.insertarTodosLosCursos),
     url(r'^api/update_faculty$', views.updateFaculty),
-    # url(r'^api/find_course$', views.findCourse),
     url('api/find_course', views.findCourse),
+    url('api/select_course_prox_semestre', views.selectCourseProxSemestre),
     url(r'^api/add_taken_course$', views.addTakenCourse),
     url(r'^api/get_user_id$', views.getUserId),
     url('api/get_faculty_name', views.getFacultyUser),
     url('api/get_all_courses_user_has_taken', views.getAllCoursesUserHasTaken),
     url('api/get_all_courses_by_semester', views.getAllCoursesBySemester),
-    url('api/see_gpa', views.seeGPA)
+    url('api/see_gpa', views.seeGPA),
+    url('api/insertar_prox_sem_cursos', views.insertarTodosLosCursosProxSemestre)
 ]
 

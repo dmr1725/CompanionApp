@@ -3,7 +3,7 @@ import json
 sys.path.insert(1,'C:/Users/diego/Documents/companion_app_gh/organizar/')
 
 
-from organizar import files3
+from organizar import files3, proxSemFiles
 
 
 from rest_auth.registration.views import SocialLoginView
@@ -15,7 +15,7 @@ from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser 
 from rest_framework import status
  
-from .models import Facultad, Curso
+from .models import Facultad, Curso, ProximoSemestre
 from .serializers import FacultadSerializer, CursoSerializer
 from rest_framework.decorators import api_view
 
@@ -48,7 +48,7 @@ def insertarTodosLosCursos(request):
         i = 1
         for file in files3:
             check = file['file'].split('.')
-            path = "C:/Users/diego/Documents/companion_app/segundo_sem" if check[0][-1] == '2' else "C:/Users/diego/Documents/companion_app/primer_sem"
+            path = "C:/Users/diego/Documents/companion_app_gh/segundo_sem" if check[0][-1] == '2' else "C:/Users/diego/Documents/companion_app_gh/primer_sem"
             with open(path + '/' + file['file']) as f:
                 data = json.load(f)
                 fac_id = file['num']
@@ -91,7 +91,49 @@ def insertarTodosLosCursos(request):
                                 i += 1
         return JsonResponse({'message': 'se insertaron todos los cursos'}, status=status.HTTP_201_CREATED)
 
+@api_view(['POST',])
+def insertarTodosLosCursosProxSemestre(request):
+    if request.method == 'POST': 
+        for file in proxSemFiles:
+            path = "C:/Users/diego/Documents/companion_app_gh/Miupi Parser"
+            with open(path + '/' + file['file']) as f:
+                data = json.load(f)
+                fac_id = file["num"] # this id comes from the file organizar. If the course does not exist in table Curso, use this id
+                for course in data:
+                    name = course["Nombre"]
+                    code = course["Curso"]
+                    creditos = int(course["Creditos"])
+                    section = course["Seccion"]
+                    prof = course["Profesor"]
+                    hours = course["Horario"]
+                    days = course["Dias"]
+                    rooms = course["Salones"]
 
+
+                    # seeing if course from json file already exists in table Curso
+                    cursor = connection.cursor()
+                    cursor.execute(f'SELECT id from "CompanionApp_curso" where code = \'{code}\'')
+                    course_id = cursor.fetchone()
+
+                    # if course does not exist in table Curso, create the course in table Course and create the course in table ProximoSemestre
+                    if course_id == None:
+                        # create course
+                        cursor = connection.cursor()
+                        cursor.execute(f'INSERT INTO "CompanionApp_curso" (name, code, creditos, fac_id_id) VALUES (\'{name}\', \'{code}\', {creditos}, {fac_id})')
+                        
+                         # seeing again if course from json file already exists in table Curso to fetch course_id
+                        cursor = connection.cursor()
+                        cursor.execute(f'SELECT id from "CompanionApp_curso" where code = \'{code}\'')
+                        course_id = cursor.fetchone()
+                       
+                  
+                    # insert course to the table ProxSemestre
+                    course_id = course_id[0]
+                    cursor = connection.cursor()
+            
+                    cursor.execute(f'INSERT INTO "CompanionApp_proximosemestre" (name, code, creditos, section, prof, hours, days, rooms, course_id_id) VALUES (\'{name}\', \'{code}\', {creditos}, \'{section}\', \'{prof}\', \'{hours}\', \'{days}\', \'{rooms}\', {course_id})')
+          
+        return JsonResponse({'message': 'se insertaron todos los cursos'}, status=status.HTTP_201_CREATED)
 
 
 @api_view(['PATCH',])
@@ -119,6 +161,15 @@ def findCourse(request):
     if request.method == 'GET':
         course_code = request.query_params['code'].upper()
         courses = Curso.objects.filter(code__contains=course_code)[:10]
+        courses = list(courses.values())
+        return JsonResponse({'list': courses}, status=status.HTTP_200_OK)
+
+# find courses in our ProximoSemestre table
+@api_view(['GET',])
+def selectCourseProxSemestre(request):
+    if request.method == 'GET':
+        course_code = request.query_params['code'].upper()
+        courses = ProximoSemestre.objects.filter(code__contains=course_code)[:10]
         courses = list(courses.values())
         return JsonResponse({'list': courses}, status=status.HTTP_200_OK)
 

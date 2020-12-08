@@ -37,7 +37,7 @@ class Matricula(models.Model):
 class ProximoSemestre(models.Model):
     course_id = models.ForeignKey(Curso, on_delete=models.CASCADE, default=1)
     name = models.CharField(max_length=150)
-    code = models.CharField(max_length=9)
+    code = models.CharField(max_length=15)
     creditos = models.IntegerField(default=0)
     section = models.CharField(max_length=5, null=True, blank=True)
     prof = models.CharField(max_length=150, null=True, blank=True)
