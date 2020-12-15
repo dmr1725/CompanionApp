@@ -1,14 +1,13 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, TextInput, View, Button, ActivityIndicator } from "react-native";
+import { FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, TextInput, View, Button, ActivityIndicator, Alert } from "react-native";
 import * as SecureStore from 'expo-secure-store';
 import Modal from 'react-native-modal';
-import {Picker} from '@react-native-community/picker';
 
 
 const Item = ({ item, onPress, style }) => (
   <TouchableOpacity onPress={onPress} style={[styles.item, style]}>
-    <Text style={styles.title}>{item.code}</Text>
+    <Text style={styles.title}>{`${item.code}-${item.section}`}</Text>
   </TouchableOpacity>
 );
 
@@ -26,49 +25,52 @@ const renderSeparator = () => {
 };
 
 
-const AddTakenCourse = () => {
+const EnrollNextSemester = () => {
   const [text, setText] = useState('')
   const [selectedId, setSelectedId] = useState(null);
   const [data, setData] = useState([])
   const [modalVisible, setModalVisible] = useState(false)
-  const [grade, setGrade] = useState('A')
-  const [year, setYear] = useState('1')
-  const [semester, setSemester] = useState('1')
   const [animating, setAnimating] = useState('')
+  const [isSummer, setIsSummer] = useState('false')
+  const [code, setCode] = useState('')
+  const [creditos, setCreditos] = useState('')
+  const [days, setDays] = useState('')
+  const [courseName, setCourseName] = useState('')
+  const [prof, setProf] = useState('')
+  const [rooms, setRooms] = useState('')
+  const [section, setSection] = useState('')
+  const [hours, setHours] = useState('')
 
   const toggle = ()=>{
     setModalVisible(!modalVisible)
   }
 
-  const addCourse = async ()=>{
+  // add course (enroll) to your next semester
+  const enrollCourse = async ()=>{
       const token = await SecureStore.getItemAsync('token')
       let id = await SecureStore.getItemAsync('id')
       let user_id = parseInt(id)
-      console.log('year', year)
-      console.log('semester', semester)
-      console.log('grade', grade)
 
 
       let response = await axios({
         method: 'POST',
-        url: 'https://86239a352b63.ngrok.io/api/add_taken_course',
+        url: 'https://86239a352b63.ngrok.io/api/matricular_prox_semestre',
         headers: {
           'content-type': 'application/json',
           Authorization: `Token ${token}`
         },
         data: {
-          semester: semester,
-          year: year,
           user_id: user_id,
-          grade: grade,
-          course_id: selectedId
+          course_id: selectedId,
+          isSummer: isSummer
         }
       })
-
       console.log(response.data.msg)
+    //   setMsg(response.data.msg)
 
       setAnimating(true)
-
+      
+      // after 3 seconds, the courses, the modal and the activity indicator will disappear
       setTimeout(()=>{
         setAnimating(false)
         setModalVisible(false)
@@ -77,9 +79,8 @@ const AddTakenCourse = () => {
       }, 3000)
 
       setTimeout(()=>{
-        Alert.alert(response.data.msg)
-     }, 5000)
-
+          Alert.alert(response.data.msg)
+      }, 5000)
 
   }
 
@@ -91,19 +92,21 @@ const AddTakenCourse = () => {
       const token = await SecureStore.getItemAsync('token')
       const response = await axios({
           method: 'GET',
-          url: `https://86239a352b63.ngrok.io/api/find_course?code=${text}`,
+          url: `https://86239a352b63.ngrok.io/api/select_course_prox_semestre?code=${text}`,
           headers: {
             'content-type': 'application/json',
             Authorization: `Token ${token}`
           }
 
       })
+      // looping through our response data and creating a course object to append it to the courses array
       response.data.list.map((course)=>{
-        let oneCourse = {'id': course.id, 'code': course.code}
+        let oneCourse = {'id': course.id, 'name': course.name,'code': course.code, 'creditos': course.creditos, 'prof': course.prof, 'section': course.section, 'hours': course.hours, 'days': course.days, 'rooms': course.rooms}
         courses.push(oneCourse)
       })
 
       setData(courses)
+    //   console.log(courses)
   }
 
   const renderItem = ({ item }) => {
@@ -113,6 +116,14 @@ const AddTakenCourse = () => {
         item={item}
         onPress={() => {
           setSelectedId(item.id)
+          setCourseName(item.name)
+          setCode(item.code)
+          setCreditos(item.creditos)
+          setSection(item.section)
+          setDays(item.days)
+          setHours(item.hours)
+          setRooms(item.rooms)
+          setProf(item.prof)
           setModalVisible(true)
         }}
         style={{ backgroundColor }}
@@ -125,7 +136,7 @@ const AddTakenCourse = () => {
     <View style={{flex: 1, padding: 10}}>
        <TextInput
         style={styles.searchBar}
-        placeholder="Search for a course that you've taken"
+        placeholder="Search for a course that you want to enroll for next semester"
         onChangeText={text=>searchCourses(text)}
         // onChangeText={text=>setText(text)}
       />
@@ -136,59 +147,23 @@ const AddTakenCourse = () => {
         extraData={selectedId}
         ItemSeparatorComponent={renderSeparator}
       />
-      <Modal isVisible={modalVisible} style={{
-            backgroundColor: 'white',
-            flexDirection: 'row',
-            borderRadius: 20,
-            margin: 50,
-            padding: 10,
-        }}>
+      <Modal isVisible={modalVisible} 
+        >
             <View style={styles.modalItem}>
-                <Text>Grade</Text>
-                <Picker
-                    selectedValue={grade}
-                    style={{ width: 50}}
-                    onValueChange={(itemValue, itemIndex) => setGrade(itemValue) }>
-                    <Picker.Item label="A" value="A" />
-                    <Picker.Item label="B" value="B" />
-                    <Picker.Item label="C" value="C" />
-                    <Picker.Item label="D" value="D" />
-                    <Picker.Item label="F" value="F" />
-                </Picker>
+                <Text></Text>
+                <Text style={styles.course_info}>Name: {courseName}</Text>
+                <Text style={styles.course_info}>Code: {code}</Text>
+                <Text style={styles.course_info}>Credits: {creditos}</Text>
+                <Text style={styles.course_info}>Section: {section}</Text>
+                <Text style={styles.course_info}>Prof: {prof}</Text>
+                <Text style={styles.course_info}>Days: {days}</Text>
+                <Text style={styles.course_info}>Hours: {hours}</Text>
+                <Text style={styles.course_info}>Rooms: {rooms}</Text>
+                <ActivityIndicator size="small" color="0000ff" animating={animating}/>
+                <Button title="Enroll" onPress={enrollCourse}/>
+                <Button title="Close" onPress={toggle}/>
             </View>
-            <View style={styles.modalItem}>
-                <Text>Year</Text>
-                <Picker
-                    selectedValue={year}
-                    style={{ width: 50}}
-                    onValueChange={(itemValue, itemIndex) => setYear(itemValue) }>
-                    <Picker.Item label="1" value="1" />
-                    <Picker.Item label="2" value="2" />
-                    <Picker.Item label="3" value="3" />
-                    <Picker.Item label="4" value="4" />
-                    <Picker.Item label="5" value="5" />
-                    <Picker.Item label="6" value="6" />
-                </Picker>
-            </View>
-            <View style={styles.modalItem}>
-                <Text>Semester</Text>
-                <Picker
-                    selectedValue={semester}
-                    style={{ width: 50}}
-                    onValueChange={(itemValue, itemIndex) => setSemester(itemValue) }>
-                    <Picker.Item label="1" value="1" />
-                    <Picker.Item label="2" value="2" />
-                </Picker>
-            </View>
-           <View style={{flex: 1, justifyContent: 'center'}}>
-                <ActivityIndicator size="large" color="0000ff" animating={animating}/>
-                <View>
-                    <Button title="Submit" onPress={addCourse}/>
-                    <Button title="Close" onPress={toggle}/>
-                </View>
-           </View>
         </Modal>
-     
     </View>
   );
 };
@@ -214,9 +189,16 @@ const styles = StyleSheet.create({
   },
   modalItem: {
     // width: '30%', // is 30% of container width
-    margin: 8 // 300
-}
+    margin: 60, // 300
+    backgroundColor: 'white',
+    borderRadius:20,
+    height: 270
+  },
+  course_info: {
+      fontWeight: 'bold',
+      fontSize: 13
+  }
   
 });
 
-export default AddTakenCourse;
+export default EnrollNextSemester;

@@ -12,6 +12,7 @@ import NotificationsScreen from './Screens/NotificationScreen'
 import SettingScreen from './Screens/SettingScreen'
 import AddTakenCourse from './Screens/AddTakenCourse'
 import MyCurriculum from './Screens/MyCurriculum'
+import EnrollNextSemester from './Screens/EnrollNextSemester'
 
 
 const Drawer = createDrawerNavigator()
@@ -34,7 +35,7 @@ export default function App() {
 
         try {
           // login user in backend
-          let response = await fetch('http://230cd80ec7d6.ngrok.io/rest-auth/google/', {
+          let response = await fetch('https://86239a352b63.ngrok.io/rest-auth/google/', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'
@@ -55,7 +56,7 @@ export default function App() {
           const token = await SecureStore.getItemAsync('token')
 
           // storing our id
-          let id = await fetch('http://230cd80ec7d6.ngrok.io/api/get_user_id', {
+          let id = await fetch('https://86239a352b63.ngrok.io/api/get_user_id', {
             method: 'GET',
             headers: {
               'content-type': 'application/json',
@@ -101,6 +102,8 @@ export default function App() {
           <Drawer.Screen name="Settings" component={SettingScreen} />
           <Drawer.Screen name="Add Taken Courses" component={AddTakenCourse} />
           <Drawer.Screen name="My Curriculum" component={MyCurriculum} />
+          <Drawer.Screen name="Enroll Next Semester" component={EnrollNextSemester} />
+
         </Drawer.Navigator>
     </NavigationContainer>
   )

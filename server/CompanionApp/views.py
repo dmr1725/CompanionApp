@@ -254,7 +254,7 @@ def addTakenCourse(request):
         cursor = connection.cursor()
         cursor.execute(f'UPDATE "CompanionApp_user" set gpa = {gpa} where id={user_id}')
         
-        return JsonResponse({'list': 'se matriculo al estudiante'}, status=status.HTTP_201_CREATED)
+        return JsonResponse({'msg': 'Ok, you can see that course in your curriculum'}, status=status.HTTP_201_CREATED)
 
 
 @api_view(['GET'])
@@ -324,6 +324,62 @@ def seeGPA(request):
         cursor.execute(f'SELECT gpa from "CompanionApp_user" where id={user_id}')
         GPA = cursor.fetchone()
         return JsonResponse({'gpa': GPA}, status = status.HTTP_200_OK)
+
+@api_view(['POST',])
+def matricularProxSemestre(request):
+    if request.method == 'POST':
+        # data from request
+        user_id = int(request.data['user_id'])
+        isSummer = request.data['isSummer']
+        course_id = int(request.data['course_id'])
+
+
+        # selecting current year and current semester of user from database
+        cursor = connection.cursor()
+        cursor.execute(f'Select current_year, current_semester from "CompanionApp_user" where id = {user_id} ')
+        info = cursor.fetchone()
+        current_year = info[0]
+        current_semester = info[1]
+
+        # determining next semester and next year
+        if (current_semester == 2 and isSummer == 'false') or current_semester == 3:
+            next_semester = 1
+            next_year = current_year + 1
+        elif (current_semester == 2 and isSummer == 'true'):
+            next_semester = current_semester + 1 # 3
+            next_year = current_year # stays the same
+        elif current_semester == 1:
+            next_semester = current_semester + 1 # 2
+            next_year = current_year
+
+        # selecting all attributes of course from course_id
+        cursor = connection.cursor()
+        cursor.execute(f'Select * from "CompanionApp_proximosemestre" where id = {course_id} ')
+        info = cursor.fetchone() 
+        course_name = info[1]
+        course_code = info[2]
+        course_section = info[4]
+        course_prof = info[5]
+        course_hours = info[6]
+        course_days = info[7]
+        course_rooms = info[8]
+        course_id = info[9] # course_id in "CompanionApp_curso"
+        course_grade = 'N' # N de none, por ahora no hay nota
+        
+        # see if student already enrolled for the class
+        cursor = connection.cursor()
+        cursor.execute(f'Select id from "CompanionApp_matricula" where course_id_id={course_id} and section=\'{course_section}\' and prof=\'{course_prof}\' and horarios=\'{course_hours}\' and dias=\'{course_days}\' and salones=\'{course_rooms}\' and semestre={next_semester} and year={next_year} and user_id_id={user_id}')
+        info = cursor.fetchone() 
+        print(info)
+        if info != None:
+            return JsonResponse({'msg': 'Ya estabas matriculado'}, status=status.HTTP_201_CREATED)
+        else:
+            # enroll student
+            cursor = connection.cursor()
+            cursor.execute(f'INSERT INTO "CompanionApp_matricula" (section, prof, semestre, year, grade, salones, horarios, dias, course_id_id, user_id_id) VALUES (\'{course_section}\',\'{course_prof}\', {next_semester}, {next_year}, \'{course_grade}\', \'{course_rooms}\', \'{course_hours}\', \'{course_days}\', {course_id}, {user_id})')
+
+        return JsonResponse({'msg': 'te matriculaste a ' + course_code + '-' + course_section}, status=status.HTTP_201_CREATED)
+
 
 @api_view(['GET', 'POST'])
 def hello_world(request):

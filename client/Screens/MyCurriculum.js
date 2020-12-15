@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import axios from 'axios'
-import { Table, Row, Rows, TableWrapper, Col } from 'react-native-table-component';
+import { Table, Row, Rows, TableWrapper, Col, Cell } from 'react-native-table-component';
 import {Picker} from '@react-native-community/picker'
 import * as SecureStore from 'expo-secure-store';
 
@@ -20,7 +20,7 @@ const MyCurriculum = () =>{
         let user_id = parseInt(id)
 
         try {
-            let response = await axios('http://230cd80ec7d6.ngrok.io/api/see_gpa', {
+            let response = await axios('https://86239a352b63.ngrok.io/api/see_gpa', {
                 method: 'POST',
                 headers: {
                     Authorization: `Token ${token}`
@@ -43,7 +43,7 @@ const MyCurriculum = () =>{
         let numbers = []
 
         try {
-            let response = await axios(`http://230cd80ec7d6.ngrok.io/api/get_all_courses_by_semester?user_id=${user_id}&year=${year}&semestre=${semester}`, {
+            let response = await axios(`https://86239a352b63.ngrok.io/api/get_all_courses_by_semester?user_id=${user_id}&year=${year}&semestre=${semester}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -69,6 +69,9 @@ const MyCurriculum = () =>{
                console.log(error)
            }
     }
+
+
+
 
     useEffect(()=>{
         console.log('dimelo')
@@ -127,5 +130,5 @@ const styles = StyleSheet.create({
     wrapper: { flexDirection: 'row' },
     title: { flex: 1, backgroundColor: '#e82020' },
     row: {  height: 28  },
-    text: { textAlign: 'center', fontSize:10 }
+    text: { textAlign: 'center', fontSize:10 },
   });
