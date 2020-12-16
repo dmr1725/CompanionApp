@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, TextInput, View, Button, ActivityIndicator } from "react-native";
+import { FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, TextInput, View, Button, ActivityIndicator, Alert } from "react-native";
 import * as SecureStore from 'expo-secure-store';
 import Modal from 'react-native-modal';
 import {Picker} from '@react-native-community/picker';
@@ -51,7 +51,7 @@ const AddTakenCourse = () => {
 
       let response = await axios({
         method: 'POST',
-        url: 'https://86239a352b63.ngrok.io/api/add_taken_course',
+        url: 'http://75f6ccfd08ee.ngrok.io/api/add_taken_course',
         headers: {
           'content-type': 'application/json',
           Authorization: `Token ${token}`
@@ -91,7 +91,7 @@ const AddTakenCourse = () => {
       const token = await SecureStore.getItemAsync('token')
       const response = await axios({
           method: 'GET',
-          url: `https://86239a352b63.ngrok.io/api/find_course?code=${text}`,
+          url: `http://75f6ccfd08ee.ngrok.io/api/find_course?code=${text}`,
           headers: {
             'content-type': 'application/json',
             Authorization: `Token ${token}`

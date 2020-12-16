@@ -117,21 +117,28 @@ def insertarTodosLosCursosProxSemestre(request):
 
                     # if course does not exist in table Curso, create the course in table Course and create the course in table ProximoSemestre
                     if course_id == None:
+                        print('hola')
                         # create course
                         cursor = connection.cursor()
                         cursor.execute(f'INSERT INTO "CompanionApp_curso" (name, code, creditos, fac_id_id) VALUES (\'{name}\', \'{code}\', {creditos}, {fac_id})')
                         
-                         # seeing again if course from json file already exists in table Curso to fetch course_id
+                         # once created the course, fetch the course_id
                         cursor = connection.cursor()
                         cursor.execute(f'SELECT id from "CompanionApp_curso" where code = \'{code}\'')
                         course_id = cursor.fetchone()
-                       
-                  
-                    # insert course to the table ProxSemestre
+                    
+                    # getting course_id from line 128 or 116
                     course_id = course_id[0]
+
+                    # before inserting course, check if that course with section is already in the table ProximoSemestre
                     cursor = connection.cursor()
-            
-                    cursor.execute(f'INSERT INTO "CompanionApp_proximosemestre" (name, code, creditos, section, prof, hours, days, rooms, course_id_id) VALUES (\'{name}\', \'{code}\', {creditos}, \'{section}\', \'{prof}\', \'{hours}\', \'{days}\', \'{rooms}\', {course_id})')
+                    cursor.execute(f'Select id from "CompanionApp_proximosemestre" where code=\'{code}\' and section=\'{section}\'')
+                    prox_sem_id = cursor.fetchone() # id from table 
+    
+                    # if course with section does not exist, insert it in the table ProximoSemestre
+                    if prox_sem_id == None:
+                        cursor = connection.cursor()
+                        cursor.execute(f'INSERT INTO "CompanionApp_proximosemestre" (name, code, creditos, section, prof, hours, days, rooms, course_id_id) VALUES (\'{name}\', \'{code}\', {creditos}, \'{section}\', \'{prof}\', \'{hours}\', \'{days}\', \'{rooms}\', {course_id})')
           
         return JsonResponse({'message': 'se insertaron todos los cursos'}, status=status.HTTP_201_CREATED)
 
@@ -381,6 +388,55 @@ def matricularProxSemestre(request):
         return JsonResponse({'msg': 'te matriculaste a ' + course_code + '-' + course_section}, status=status.HTTP_201_CREATED)
 
 
+@api_view(['POST',])
+def getMyCurrentCourses(request):
+    if request.method == 'POST':
+        user_id = int(request.data['user_id'])
+        current_courses = [] 
+
+        # find current year of student
+        cursor = connection.cursor()
+        cursor.execute(f'select max(year) from "CompanionApp_matricula" where user_id_id={user_id}')
+        current_year = cursor.fetchone()
+
+        if current_year == None:
+            return JsonResponse({'msg': 'No tienes cursos'}, status = status.HTTP_200_OK)
+
+        else:
+            current_year = int(current_year[0])
+
+
+        # find current semester of student, based on the current_year
+        cursor = connection.cursor()
+        cursor.execute(f'select max(semestre) from "CompanionApp_matricula" where year = {current_year}')
+        current_semester = cursor.fetchone()
+        current_semester = int(current_semester[0])
+
+        # find current courses based on current_semester and current_year
+        cursor = connection.cursor()
+        cursor.execute(f'select c.name, c.code, m.section, m.prof, m.salones, m.horarios, m.dias from "CompanionApp_matricula" m INNER JOIN "CompanionApp_curso" c on c.id = m.course_id_id where m.year = {current_year} and m.semestre={current_semester}')
+        fetchCourses = cursor.fetchall()
+
+        # convert courses array into dictionary
+        for i in range(0, len(fetchCourses)):
+            # if fetchCourses[i][2] == None, this means that the rest of the array will also be none. 
+            # The reason for this is that when users AddTakenCourses, they just add the course code
+            if fetchCourses[i][2] == None:
+                dic = {'name': fetchCourses[i][0], 'code': fetchCourses[i][1]}
+            
+            # here we have all the elements because users enrolled from the courses in table ProximoSemestre
+            else:    
+                dic = {'name': fetchCourses[i][0], 'code': fetchCourses[i][1], 'section': fetchCourses[i][2], 'prof': fetchCourses[i][3], 'salones': fetchCourses[i][4], 'horarios': fetchCourses[i][5], 'dias': fetchCourses[i][6]}
+
+            current_courses.append(dic)
+
+
+       
+
+    return JsonResponse({'list': current_courses}, status = status.HTTP_200_OK)
+
+
+
 @api_view(['GET', 'POST'])
 def hello_world(request):
     # if request.user.is_authenticated:
@@ -389,4 +445,4 @@ def hello_world(request):
     return JsonResponse({'msg': 'no'})
 
 
-# delete course and update credits_taken
+# delete course and update credits_takenv
