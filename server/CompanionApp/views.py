@@ -414,19 +414,19 @@ def getMyCurrentCourses(request):
 
         # find current courses based on current_semester and current_year
         cursor = connection.cursor()
-        cursor.execute(f'select c.name, c.code, m.section, m.prof, m.salones, m.horarios, m.dias from "CompanionApp_matricula" m INNER JOIN "CompanionApp_curso" c on c.id = m.course_id_id where m.year = {current_year} and m.semestre={current_semester}')
+        cursor.execute(f'select c.id, c.name, c.code, m.year, m.semestre, m.section, m.prof, m.salones, m.horarios, m.dias from "CompanionApp_matricula" m INNER JOIN "CompanionApp_curso" c on c.id = m.course_id_id where m.year = {current_year} and m.semestre={current_semester}')
         fetchCourses = cursor.fetchall()
 
         # convert courses array into dictionary
         for i in range(0, len(fetchCourses)):
             # if fetchCourses[i][2] == None, this means that the rest of the array will also be none. 
             # The reason for this is that when users AddTakenCourses, they just add the course code
-            if fetchCourses[i][2] == None:
-                dic = {'name': fetchCourses[i][0], 'code': fetchCourses[i][1]}
+            if fetchCourses[i][5] == None:
+                dic = {'id': fetchCourses[i][0], 'name': fetchCourses[i][1], 'code': fetchCourses[i][2], 'year': fetchCourses[i][3], 'semestre': fetchCourses[i][4]}
             
             # here we have all the elements because users enrolled from the courses in table ProximoSemestre
             else:    
-                dic = {'name': fetchCourses[i][0], 'code': fetchCourses[i][1], 'section': fetchCourses[i][2], 'prof': fetchCourses[i][3], 'salones': fetchCourses[i][4], 'horarios': fetchCourses[i][5], 'dias': fetchCourses[i][6]}
+                dic = {'id': fetchCourses[i][0], 'name': fetchCourses[i][1], 'code': fetchCourses[i][2], 'year': fetchCourses[i][3], 'semestre': fetchCourses[i][4], 'section': fetchCourses[i][5], 'prof': fetchCourses[i][6], 'salones': fetchCourses[i][7], 'horarios': fetchCourses[i][8], 'dias': fetchCourses[i][9]}
 
             current_courses.append(dic)
 

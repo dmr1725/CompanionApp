@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Button, View } from 'react-native';
 import * as SecureStore from 'expo-secure-store';
 import Axios from 'axios';
+import Logout from './Logout'
 
 
 function HomeScreen({ navigation }) {
@@ -11,7 +12,7 @@ function HomeScreen({ navigation }) {
     console.log(token, id)
 
     let response = await Axios({
-      url: 'http://5ce95b6ddcbd.ngrok.io/api/hello',
+      url: 'http://8aab82eb2b3d.ngrok.io/api/hello',
       method: 'GET',
       headers: {
           Authorization: `Token ${token}`
@@ -25,6 +26,7 @@ function HomeScreen({ navigation }) {
   
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        {/* <Logout/> */}
         <Button
           onPress={() => navigation.navigate('Notifications')}
           title="Go to notifications"
