@@ -9,7 +9,7 @@ class Facultad(models.Model):
 class Curso(models.Model):
     fac_id = models.ForeignKey(Facultad, on_delete=models.CASCADE)
     name = models.CharField(max_length=150)
-    code = models.CharField(max_length=9)
+    code = models.CharField(max_length=15)
     creditos = models.IntegerField(default=0)
 
 class User(AbstractUser):

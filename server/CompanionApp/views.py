@@ -72,7 +72,7 @@ def insertarTodosLosCursos(request):
                             else:
                                 print('ya se creo del lab', i)
                                 i += 1
-                        elif 'LAB in key' and (name != 'LABORATORIO' or name != 'LABORATORIO ' or name != 'TALLER' or name != 'TALLER ' or name != 'CONFERENCIA' or name != 'CONFERENCIA '):
+                        elif 'LAB' in key and (name != 'LABORATORIO' or name != 'LABORATORIO ' or name != 'TALLER' or name != 'TALLER ' or name != 'CONFERENCIA' or name != 'CONFERENCIA '):
                             continue
                         
                         # todas las otras clases que no tengan _LAB en su codigo
@@ -294,12 +294,12 @@ def getAllCoursesUserHasTaken(request):
     if request.method == 'GET':
         user_id = int(request.query_params['user_id'])
         cursor = connection.cursor()
-        cursor.execute(f'SELECT c.name, c.code, c.creditos, m.user_id_id, m.year, m.semestre, m.grade FROM "CompanionApp_curso" c INNER JOIN "CompanionApp_matricula" m ON (c.id = m.course_id_id) where m.user_id_id = {user_id} and m.grade <> \'N%\' order by m.year ASC, m.semestre ASC')
+        cursor.execute(f'SELECT c.name, c.code, c.creditos, m.user_id_id, m.year, m.semestre, m.grade, c.id FROM "CompanionApp_curso" c INNER JOIN "CompanionApp_matricula" m ON (c.id = m.course_id_id) where m.user_id_id = {user_id} and m.grade <> \'N%\' order by m.year ASC, m.semestre ASC')
         fetchCourses = cursor.fetchall()
         courses = []
         # convert courses to an array of objects
         for i in range(0, len(fetchCourses)):
-            dic = {'name': fetchCourses[i][0], 'code': fetchCourses[i][1], 'creditos': fetchCourses[i][2], 'year': fetchCourses[i][4], 'semestre': fetchCourses[i][5], 'grade': fetchCourses[i][6]}
+            dic = {'name': fetchCourses[i][0], 'code': fetchCourses[i][1], 'creditos': fetchCourses[i][2], 'year': fetchCourses[i][4], 'semestre': fetchCourses[i][5], 'grade': fetchCourses[i][6], 'course_id': fetchCourses[i][7]}
             courses.append(dic)
 
         return JsonResponse({'list': courses}, status=status.HTTP_200_OK)
@@ -399,7 +399,7 @@ def getMyCurrentCourses(request):
         cursor.execute(f'select max(year) from "CompanionApp_matricula" where user_id_id={user_id}')
         current_year = cursor.fetchone()
 
-        if current_year == None:
+        if current_year[0] == None:
             return JsonResponse({'msg': 'No tienes cursos'}, status = status.HTTP_200_OK)
 
         else:
@@ -434,6 +434,177 @@ def getMyCurrentCourses(request):
        
 
     return JsonResponse({'list': current_courses}, status = status.HTTP_200_OK)
+
+@api_view(['PATCH',])
+def updateGradeAndGPA(request):
+    if request.method == 'PATCH':
+        new_grade = request.data['grade']
+        course_id = int(request.data['course_id'])
+        year = int(request.data['year'])
+        semestre = int(request.data['semestre'])
+        user_id = int(request.data['user_id'])
+        current_points = 0 # to deal with current_grade
+        new_points = 0 # to deal with new_grade
+
+        # points of new_grade
+        if new_grade == 'A':
+            new_points = 4
+        elif new_grade == 'B':
+            new_points = 3
+        elif new_grade == 'C':
+            new_points = 2
+        elif new_grade == 'D':
+            new_points = 1
+        elif new_grade == 'F':
+            new_points = 0
+
+        # get credits from the course
+        cursor = connection.cursor()
+        cursor.execute(f'select creditos from "CompanionApp_curso" where id={course_id}')
+        creditos = cursor.fetchone()
+        creditos = creditos[0]
+        
+        # select current grade
+        cursor = connection.cursor()
+        cursor.execute(f'select grade from "CompanionApp_matricula" where course_id_id={course_id} and user_id_id={user_id} and year={year} and semestre={semestre}')
+        current_grade = cursor.fetchone()
+        current_grade = current_grade[0]
+        print(current_grade)
+
+        # this means that the credits for this course had not been added to the column credits_taken from table "CompanionApp_curso"
+        if current_grade == 'N':
+            # get credits_taken. Then add the courses credits to credits_taken
+            cursor = connection.cursor()
+            cursor.execute(f'select credits_taken from "CompanionApp_user" where id={user_id}')
+            credits_taken = cursor.fetchone()
+            credits_taken = credits_taken[0]
+            new_credits_taken = credits_taken + creditos
+            print(new_credits_taken, 'New credits taken')
+
+            # get credits_taken_score. Then multiply credits * new_points and add it to credits_taken_score
+            cursor = connection.cursor()
+            cursor.execute(f'select credits_taken_score from "CompanionApp_user" where id={user_id}')
+            credits_taken_score = cursor.fetchone()
+            credits_taken_score = credits_taken_score[0]
+            new_credits_taken_score = credits_taken_score + (new_points * creditos)
+            print(new_credits_taken_score, 'New credits taken score')
+
+            # update gpa, credits_taken, credits_taken_score
+            gpa = (new_credits_taken_score / new_credits_taken)
+            gpa = float("{:.2f}".format(gpa))
+            print(gpa, 'new gpa')
+            cursor = connection.cursor()
+            cursor.execute(f'UPDATE "CompanionApp_user" set gpa = {gpa}, credits_taken = {new_credits_taken}, credits_taken_score={new_credits_taken_score} where id={user_id}')
+
+            # update grade in table CompanionApp_matricula
+            cursor = connection.cursor()
+            cursor.execute(f'UPDATE "CompanionApp_matricula" set grade=\'{new_grade}\' where user_id_id={user_id} and semestre={semestre} and year={year} and course_id_id={course_id} ')
+            return JsonResponse({'msg': 'Your GPA was updated to ' + str(gpa)}, status = status.HTTP_202_ACCEPTED)
+
+        # else student already has a grade and wants to replace it
+        else:
+            if current_grade == 'A':
+                current_points = 4
+            elif current_grade == 'B':
+                current_points = 3
+            elif current_grade == 'C':
+                current_points = 2
+            elif current_grade == 'D':
+                current_points = 1
+            elif current_grade == 'F':
+                current_points = 0
+            
+            # get credits_taken_score and credits_taken. Then substract (creditos * current_points) to credits_taken_score. Then add (creditos * new_points) to credits_taken_score
+            cursor = connection.cursor()
+            cursor.execute(f'select credits_taken_score, credits_taken from "CompanionApp_user" where id={user_id}')
+            results = cursor.fetchone()
+            credits_taken_score = results[0]
+            credits_taken = results[1]
+            new_credits_taken_score = credits_taken_score - (creditos * current_points)
+            new_credits_taken_score = new_credits_taken_score + (creditos * new_points)
+            print(new_credits_taken_score, 'new credits taken score')
+            print(credits_taken, 'credits taken')
+
+            # update gpa and credits_taken_score. credits_taken stays the same
+            gpa = (new_credits_taken_score / credits_taken)
+            gpa = float("{:.2f}".format(gpa))
+            print(gpa, 'new gpa')
+            cursor = connection.cursor()
+            cursor.execute(f'UPDATE "CompanionApp_user" set gpa = {gpa}, credits_taken_score={new_credits_taken_score} where id={user_id}')
+
+             # update grade in table CompanionApp_matricula
+            cursor = connection.cursor()
+            cursor.execute(f'UPDATE "CompanionApp_matricula" set grade=\'{new_grade}\' where user_id_id={user_id} and semestre={semestre} and year={year} and course_id_id={course_id} ')
+            return JsonResponse({'msg': 'Your GPA was updated to ' + str(gpa)}, status = status.HTTP_202_ACCEPTED)
+
+@api_view(['DELETE',])
+def deleteCourse(request):
+    if request.method == 'DELETE':
+        course_id = int(request.data['course_id'])
+        year = int(request.data['year'])
+        semestre = int(request.data['semestre'])
+        user_id = int(request.data['user_id'])
+
+        # get credits from the course
+        cursor = connection.cursor()
+        cursor.execute(f'select creditos from "CompanionApp_curso" where id={course_id}')
+        creditos = cursor.fetchone()
+        creditos = creditos[0]
+        print(creditos)
+        
+        # select current grade
+        cursor = connection.cursor()
+        cursor.execute(f'select grade from "CompanionApp_matricula" where course_id_id={course_id} and user_id_id={user_id} and year={year} and semestre={semestre}')
+        current_grade = cursor.fetchone()
+        current_grade = current_grade[0]
+        print(current_grade)
+
+        if current_grade == 'N':
+            # just delete course from table CompanionApp_matricula
+            cursor = connection.cursor()
+            cursor.execute(f'DELETE from "CompanionApp_matricula" where user_id_id={user_id} and course_id_id = {course_id} and year={year} and semestre={semestre}')
+            return JsonResponse({'msg': 'SUCCESS' }, status = status.HTTP_202_ACCEPTED)
+        
+        else:
+            # update credits_taken, credits_taken_score and gpa
+            current_points = 0
+            if current_grade == 'A':
+                current_points = 4
+            elif current_grade == 'B':
+                current_points = 3
+            elif current_grade == 'C':
+                current_points = 2
+            elif current_grade == 'D':
+                current_points = 1
+            elif current_grade == 'F':
+                current_points = 0
+            
+            # get credits_taken_score and credits_taken. Then, substract (creditos * current_points) to credits_taken_score and substract creditos to credits_taken
+            cursor = connection.cursor()
+            cursor.execute(f'select credits_taken_score, credits_taken from "CompanionApp_user" where id={user_id}')
+            results = cursor.fetchone()
+            credits_taken_score = results[0]
+            credits_taken = results[1]
+
+            new_credits_taken_score = credits_taken_score - (current_points * creditos)
+            new_credits_taken = credits_taken - creditos
+            gpa = new_credits_taken_score / new_credits_taken 
+            gpa = float("{:.2f}".format(gpa))
+            print(new_credits_taken, 'credits taken')
+            print(new_credits_taken_score, 'credits taken score')
+
+            # update gpa, credits_taken and credits_taken_score
+            cursor = connection.cursor()
+            cursor.execute(f'UPDATE "CompanionApp_user" set gpa = {gpa}, credits_taken = {new_credits_taken}, credits_taken_score={new_credits_taken_score} where id={user_id}')
+
+            # delete course from "CompanionApp_matricula"
+            cursor = connection.cursor()
+            cursor.execute(f'DELETE from "CompanionApp_matricula" where user_id_id={user_id} and course_id_id = {course_id} and year={year} and semestre={semestre}')
+
+
+            return JsonResponse({'msg': 'SUCCESS' }, status = status.HTTP_202_ACCEPTED)
+
+
 
 
 

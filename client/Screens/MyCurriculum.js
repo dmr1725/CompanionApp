@@ -20,7 +20,7 @@ const MyCurriculum = () =>{
         let user_id = parseInt(id)
 
         try {
-            let response = await axios('http://75f6ccfd08ee.ngrok.io/api/see_gpa', {
+            let response = await axios('http://5ce95b6ddcbd.ngrok.io/api/see_gpa', {
                 method: 'POST',
                 headers: {
                     Authorization: `Token ${token}`
@@ -43,7 +43,7 @@ const MyCurriculum = () =>{
         let numbers = []
 
         try {
-            let response = await axios(`http://75f6ccfd08ee.ngrok.io/api/get_all_courses_by_semester?user_id=${user_id}&year=${year}&semestre=${semester}`, {
+            let response = await axios(`http://5ce95b6ddcbd.ngrok.io/api/get_all_courses_by_semester?user_id=${user_id}&year=${year}&semestre=${semester}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
