@@ -12,7 +12,7 @@ function HomeScreen({ navigation }) {
     console.log(token, id)
 
     let response = await Axios({
-      url: 'http://8aab82eb2b3d.ngrok.io/api/hello',
+      url: 'http://41081083853a.ngrok.io/api/hello',
       method: 'GET',
       headers: {
           Authorization: `Token ${token}`
@@ -26,7 +26,7 @@ function HomeScreen({ navigation }) {
   
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        {/* <Logout/> */}
+        {/* <Text>Welcome to Companion App!</Text> */}
         <Button
           onPress={() => navigation.navigate('Notifications')}
           title="Go to notifications"

@@ -16,6 +16,7 @@ import EnrollNextSemester from './EnrollNextSemester'
 import Logout from './Logout'
 import CurrentCourses from './CurrentCourses'
 import EditGrades from './EditGrades'
+import UpdateSemYear from './UpdateSemYear'
 
 
 const Drawer = createDrawerNavigator()
@@ -38,7 +39,7 @@ export default function Login() {
 
         try {
           // login user in backend
-          let response = await fetch('http://8aab82eb2b3d.ngrok.io/rest-auth/google/', {
+          let response = await fetch('http://41081083853a.ngrok.io/rest-auth/google/', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'
@@ -59,7 +60,7 @@ export default function Login() {
           const token = await SecureStore.getItemAsync('token')
 
           // storing our id
-          let id = await fetch('http://8aab82eb2b3d.ngrok.io/api/get_user_id', {
+          let id = await fetch('http://41081083853a.ngrok.io/api/get_user_id', {
             method: 'GET',
             headers: {
               'content-type': 'application/json',
@@ -107,6 +108,7 @@ export default function Login() {
       <Drawer.Screen name="Enroll Next Semester" component={EnrollNextSemester} />
       <Drawer.Screen name="Update Grades" component={EditGrades} />
       <Drawer.Screen name="Current Courses" component={CurrentCourses} />
+      <Drawer.Screen name="Set your semester and year" component={UpdateSemYear} />
       <Drawer.Screen name="Logout" component={Logout} />
 
    </Drawer.Navigator>

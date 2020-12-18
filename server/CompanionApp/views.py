@@ -8,6 +8,8 @@ from organizar import files3, proxSemFiles
 
 from rest_auth.registration.views import SocialLoginView
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
+from allauth.account.views import LogoutView
+
 
 from django.db import connection
 
@@ -26,6 +28,7 @@ from rest_framework.decorators import api_view
 
 class GoogleLogin(SocialLoginView):
     adapter_class = GoogleOAuth2Adapter
+
 
 @api_view(['POST',])
 def insertarFacultades(request):
@@ -604,7 +607,31 @@ def deleteCourse(request):
 
             return JsonResponse({'msg': 'SUCCESS' }, status = status.HTTP_202_ACCEPTED)
 
+@api_view(['PATCH',])
+def updateSemesterAndYear(request):
+    if request.method == 'PATCH':
+        user_id = int(request.data['user_id'])
+        year = int(request.data['year'])
+        semestre = int(request.data['semester'])
 
+        # update semestre and year for user. This is for knowing which year and semester he/she is currently in
+        cursor = connection.cursor()
+        cursor.execute(f'UPDATE "CompanionApp_user" set current_year={year}, current_semester={semestre} where id={user_id}')
+        return JsonResponse({'msg': 'SUCCESS' }, status = status.HTTP_202_ACCEPTED)
+        
+
+@api_view(['POST',])
+def getSemesterAndYear(request):
+    if request.method == 'POST':
+        user_id = int(request.data['user_id'])
+
+        cursor = connection.cursor()
+        cursor.execute(f'select current_year, current_semester from "CompanionApp_user" where id={user_id}')
+        info = cursor.fetchone()
+        year = info[0]
+        semestre = info[1]
+        return JsonResponse({'msg': {'year': year, 'semestre': semestre} }, status = status.HTTP_202_ACCEPTED)
+        
 
 
 

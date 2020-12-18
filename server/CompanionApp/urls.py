@@ -24,6 +24,9 @@ urlpatterns = [
     url('api/matricular_prox_semestre', views.matricularProxSemestre),
     url('api/get_current_courses', views.getMyCurrentCourses),
     url('api/update_grade_and_gpa', views.updateGradeAndGPA),
-    url('api/delete_course', views.deleteCourse)
+    url('api/delete_course', views.deleteCourse),
+    url('api/get_year_and_semester', views.getSemesterAndYear),
+    url('api/update_year_and_semester', views.updateSemesterAndYear)
+
 ]
 
