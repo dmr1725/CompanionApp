@@ -34,7 +34,7 @@ const AddTakenCourse = () => {
   const [grade, setGrade] = useState('A')
   const [year, setYear] = useState('1')
   const [semester, setSemester] = useState('1')
-  const [animating, setAnimating] = useState('')
+  const [animating, setAnimating] = useState(false)
 
   const toggle = ()=>{
     setModalVisible(!modalVisible)
@@ -52,7 +52,7 @@ const AddTakenCourse = () => {
 
       let response = await axios({
         method: 'POST',
-        url: 'http://41081083853a.ngrok.io/api/add_taken_course',
+        url: 'http://eaff18da08e1.ngrok.io/api/add_taken_course',
         headers: {
           'content-type': 'application/json',
           Authorization: `Token ${token}`
@@ -92,7 +92,7 @@ const AddTakenCourse = () => {
       const token = await SecureStore.getItemAsync('token')
       const response = await axios({
           method: 'GET',
-          url: `http://41081083853a.ngrok.io/api/find_course?code=${text}`,
+          url: `http://eaff18da08e1.ngrok.io/api/find_course?code=${text}`,
           headers: {
             'content-type': 'application/json',
             Authorization: `Token ${token}`

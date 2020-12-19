@@ -30,7 +30,7 @@ const CurrentCourses = () =>{
     const [courses, setCourses] = useState(null)
     const [refreshing, setRefreshing] = useState(false)
     const [selectedId, setSelectedId] = useState(null); // course_id
-    const [animating, setAnimating] = useState('')
+    const [animating, setAnimating] = useState(false)
     const [modalVisible, setModalVisible] = useState(false)
     const [year, setYear] = useState(null)
     const [semestre, setSemestre] = useState(null)
@@ -50,7 +50,7 @@ const CurrentCourses = () =>{
         console.log(user_id)
 
         try {
-            let response = await axios(`http://41081083853a.ngrok.io/api/get_all_courses_user_has_taken?user_id=${user_id}`, {
+            let response = await axios(`http://eaff18da08e1.ngrok.io/api/get_all_courses_user_has_taken?user_id=${user_id}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -72,7 +72,7 @@ const CurrentCourses = () =>{
         let user_id = parseInt(id)
 
         try {
-            let response = await axios(`http://41081083853a.ngrok.io/api/delete_course`, {
+            let response = await axios(`http://eaff18da08e1.ngrok.io/api/delete_course`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json',
@@ -117,7 +117,7 @@ const CurrentCourses = () =>{
         console.log(year)
 
         try {
-            let response = await axios(`http://41081083853a.ngrok.io/api/update_grade_and_gpa`, {
+            let response = await axios(`http://eaff18da08e1.ngrok.io/api/update_grade_and_gpa`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

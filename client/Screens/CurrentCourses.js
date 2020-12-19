@@ -29,7 +29,7 @@ const CurrentCourses = () =>{
     const [courses, setCourses] = useState(null)
     const [refreshing, setRefreshing] = useState(false)
     const [selectedId, setSelectedId] = useState(null); // course_id
-    const [animating, setAnimating] = useState('')
+    const [animating, setAnimating] = useState(false)
     const [modalVisible, setModalVisible] = useState(false)
     const [code, setCode] = useState(null)
     const [days, setDays] = useState(null)
@@ -54,7 +54,7 @@ const CurrentCourses = () =>{
         let user_id = parseInt(id)
 
         try {
-            let response = await axios(`http://41081083853a.ngrok.io/api/get_current_courses`, {
+            let response = await axios(`http://eaff18da08e1.ngrok.io/api/get_current_courses`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
@@ -86,7 +86,7 @@ const CurrentCourses = () =>{
         console.log(year)
 
         try {
-            let response = await axios(`http://41081083853a.ngrok.io/api/delete_course`, {
+            let response = await axios(`http://eaff18da08e1.ngrok.io/api/delete_course`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json',

@@ -30,7 +30,7 @@ const EnrollNextSemester = () => {
   const [selectedId, setSelectedId] = useState(null);
   const [data, setData] = useState([])
   const [modalVisible, setModalVisible] = useState(false)
-  const [animating, setAnimating] = useState('')
+  const [animating, setAnimating] = useState(false)
   const [isSummer, setIsSummer] = useState('false')
   const [code, setCode] = useState('')
   const [creditos, setCreditos] = useState('')
@@ -55,7 +55,7 @@ const EnrollNextSemester = () => {
 
       let response = await axios({
         method: 'POST',
-        url: 'http://41081083853a.ngrok.io/api/matricular_prox_semestre',
+        url: 'http://eaff18da08e1.ngrok.io/api/matricular_prox_semestre',
         headers: {
           'content-type': 'application/json',
           Authorization: `Token ${token}`
@@ -93,7 +93,7 @@ const EnrollNextSemester = () => {
       const token = await SecureStore.getItemAsync('token')
       const response = await axios({
           method: 'GET',
-          url: `http://41081083853a.ngrok.io/api/select_course_prox_semestre?code=${text}`,
+          url: `http://eaff18da08e1.ngrok.io/api/select_course_prox_semestre?code=${text}`,
           headers: {
             'content-type': 'application/json',
             Authorization: `Token ${token}`
@@ -116,6 +116,7 @@ const EnrollNextSemester = () => {
       <Item
         item={item}
         onPress={() => {
+          console.log('heyyyy')
           setSelectedId(item.id)
           setCourseName(item.name)
           setCode(item.code)

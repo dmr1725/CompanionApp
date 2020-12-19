@@ -12,7 +12,7 @@ function HomeScreen({ navigation }) {
     console.log(token, id)
 
     let response = await Axios({
-      url: 'http://41081083853a.ngrok.io/api/hello',
+      url: 'http://eaff18da08e1.ngrok.io/api/hello',
       method: 'GET',
       headers: {
           Authorization: `Token ${token}`
