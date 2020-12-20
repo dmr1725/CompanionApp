@@ -195,7 +195,7 @@ def addTakenCourse(request):
         semester = int(request.data['semester'])
         repeating = False
         
-
+      
         # set point of grade
         points = 0
         if grade == 'A':
@@ -209,14 +209,14 @@ def addTakenCourse(request):
         elif grade == 'F':
             points = 0
         else:
-            return JsonResponse({'msg': 'Insert A, B, C, D or F' }, status=status.HTTP_406_NOT_ACCEPTABLE)
+            return JsonResponse({'msg': 'Insert A, B, C, D or F' }, status=status.HTTP_200_OK)
 
         # find course credits
         cursor = connection.cursor()
         cursor.execute(f'Select creditos from "CompanionApp_curso" where id = {course_id} ')
         course = cursor.fetchone()
         creditos = int(course[0])
-
+       
         # check if student already took that class in the same year and semester he/she is trying to post
         cursor = connection.cursor()
         cursor.execute(f'select semestre, year, grade, course_id_id from "CompanionApp_matricula" where semestre = {semester} and year = {year} and course_id_id = {course_id} and user_id_id = {user_id}')
@@ -224,12 +224,11 @@ def addTakenCourse(request):
         if check != None:
             check = list(check)
             if int(check[0]) == semester and int(check[1]) == year and check[3] == course_id:
-                return JsonResponse({'msg': 'You already took the course that year and semester.' }, status=status.HTTP_406_NOT_ACCEPTABLE)
+                return JsonResponse({'msg': 'You already took the course that year and semester.' }, status=status.HTTP_200_OK)
             elif int(check[1]) != year:
                 pass
             elif int(check[1] == year) and int(check[0]) != semester:
                 pass
-            
         # matricular al estudiante
         cursor = connection.cursor()
         cursor.execute(f'INSERT INTO "CompanionApp_matricula" (semestre, year, grade, user_id_id, course_id_id) VALUES ({semester}, {year}, \'{grade}\', {user_id}, {course_id})')
@@ -263,6 +262,7 @@ def addTakenCourse(request):
         gpa = float("{:.2f}".format(gpa))
         cursor = connection.cursor()
         cursor.execute(f'UPDATE "CompanionApp_user" set gpa = {gpa} where id={user_id}')
+        print('ya')
         
         return JsonResponse({'msg': 'Ok, you can see that course in your curriculum'}, status=status.HTTP_201_CREATED)
 
@@ -314,13 +314,13 @@ def getAllCoursesBySemester(request):
         year = int(request.query_params['year'])
         semestre = int(request.query_params['semestre'])
         cursor = connection.cursor()
-        cursor.execute(f'SELECT c.name, c.code, c.creditos, m.user_id_id, m.year, m.semestre, m.grade FROM "CompanionApp_curso" c INNER JOIN "CompanionApp_matricula" m ON (c.id = m.course_id_id) where m.user_id_id = {user_id} and m.year = {year} and m.semestre = {semestre} and m.grade <> \'N%\' ')
+        cursor.execute(f'SELECT c.name, c.code, c.creditos, m.user_id_id, m.year, m.semestre, m.grade, c.id FROM "CompanionApp_curso" c INNER JOIN "CompanionApp_matricula" m ON (c.id = m.course_id_id) where m.user_id_id = {user_id} and m.year = {year} and m.semestre = {semestre} and m.grade <> \'N%\' ')
         fetchCourses = cursor.fetchall()
         courses = []
 
         # convert courses to an array of objects
         for i in range(0, len(fetchCourses)):
-            dic = {'name': fetchCourses[i][0], 'code': fetchCourses[i][1], 'creditos': fetchCourses[i][2], 'year': fetchCourses[i][4], 'semestre': fetchCourses[i][5], 'grade': fetchCourses[i][6]}
+            dic = {'name': fetchCourses[i][0], 'code': fetchCourses[i][1], 'creditos': fetchCourses[i][2], 'year': fetchCourses[i][4], 'semestre': fetchCourses[i][5], 'grade': fetchCourses[i][6], 'course_id': fetchCourses[i][7]}
             courses.append(dic)
             
         return JsonResponse({'list': courses}, status=status.HTTP_200_OK)
@@ -633,6 +633,10 @@ def getSemesterAndYear(request):
         return JsonResponse({'msg': {'year': year, 'semestre': semestre} }, status = status.HTTP_202_ACCEPTED)
         
 
+@api_view(['POST',])
+def logout(request):
+    request.user.auth_token.delete()
+    return JsonResponse({"success": "Successfully logged out."}, status=status.HTTP_200_OK)
 
 
 @api_view(['GET', 'POST'])

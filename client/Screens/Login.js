@@ -42,7 +42,7 @@ export default function Login() {
 
         try {
           // login user in backend
-          let response = await fetch('http://eaff18da08e1.ngrok.io/rest-auth/google/', {
+          let response = await fetch('http://c76261aa2309.ngrok.io/rest-auth/google/', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'
@@ -63,7 +63,7 @@ export default function Login() {
           const token = await SecureStore.getItemAsync('token')
 
           // storing our id
-          let id = await fetch('http://eaff18da08e1.ngrok.io/api/get_user_id', {
+          let id = await fetch('http://c76261aa2309.ngrok.io/api/get_user_id', {
             method: 'GET',
             headers: {
               'content-type': 'application/json',

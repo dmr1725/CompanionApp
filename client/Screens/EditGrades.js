@@ -32,8 +32,8 @@ const CurrentCourses = () =>{
     const [selectedId, setSelectedId] = useState(null); // course_id
     const [animating, setAnimating] = useState(false)
     const [modalVisible, setModalVisible] = useState(false)
-    const [year, setYear] = useState(null)
-    const [semestre, setSemestre] = useState(null)
+    const [year, setYear] = useState(1)
+    const [semester, setSemester] = useState(1)
     const [grade, setGrade] = useState('A')
 
     
@@ -43,14 +43,14 @@ const CurrentCourses = () =>{
     }
 
 
-    const getAllMyCourses = async()=>{
+    const getCoursesBySemester = async()=>{
         const token = await SecureStore.getItemAsync('token')
         let id = await SecureStore.getItemAsync('id')
         let user_id = parseInt(id)
         console.log(user_id)
 
         try {
-            let response = await axios(`http://eaff18da08e1.ngrok.io/api/get_all_courses_user_has_taken?user_id=${user_id}`, {
+            let response = await axios(`http://c76261aa2309.ngrok.io/api/get_all_courses_by_semester?user_id=${user_id}&year=${year}&semestre=${semester}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -72,7 +72,7 @@ const CurrentCourses = () =>{
         let user_id = parseInt(id)
 
         try {
-            let response = await axios(`http://eaff18da08e1.ngrok.io/api/delete_course`, {
+            let response = await axios(`http://c76261aa2309.ngrok.io/api/delete_course`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json',
@@ -82,7 +82,7 @@ const CurrentCourses = () =>{
                     user_id: user_id,
                     course_id: selectedId,
                     year: year,
-                    semestre: semestre
+                    semestre: semester
                 }
             })
 
@@ -99,7 +99,7 @@ const CurrentCourses = () =>{
                 Alert.alert(response.data.msg)
             }, 5000) 
 
-            getAllMyCourses() // get current courses again
+            getCoursesBySemester() // get current courses again
             
             
            
@@ -113,11 +113,11 @@ const CurrentCourses = () =>{
         const token = await SecureStore.getItemAsync('token')
         let id = await SecureStore.getItemAsync('id')
         let user_id = parseInt(id)
-        console.log(semestre)
+        console.log(semester)
         console.log(year)
 
         try {
-            let response = await axios(`http://eaff18da08e1.ngrok.io/api/update_grade_and_gpa`, {
+            let response = await axios(`http://c76261aa2309.ngrok.io/api/update_grade_and_gpa`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',
@@ -127,7 +127,7 @@ const CurrentCourses = () =>{
                     user_id: user_id,
                     course_id: selectedId,
                     year: year,
-                    semestre: semestre,
+                    semestre: semester,
                     grade: grade
                 }
             })
@@ -145,7 +145,7 @@ const CurrentCourses = () =>{
                 Alert.alert(response.data.msg)
             }, 5000) 
 
-            getAllMyCourses() // get current courses again
+            getCoursesBySemester() // get current courses again
             
             
            
@@ -157,7 +157,7 @@ const CurrentCourses = () =>{
 
     const onRefresh = React.useCallback(async ()=>{
         setRefreshing(true)
-        getAllMyCourses()
+        getCoursesBySemester()
         setRefreshing(false)
 
     }, [refreshing])
@@ -166,8 +166,8 @@ const CurrentCourses = () =>{
 
 
     useEffect(()=>{
-        getAllMyCourses()
-    },[])
+        getCoursesBySemester()
+    },[year, semester])
 
     const renderItem = ({ item }) => {
         const backgroundColor = item.course_id === selectedId ? "#e60505" : "#fafbfc";
@@ -178,7 +178,7 @@ const CurrentCourses = () =>{
               setModalVisible(true)
               setSelectedId(item.course_id)
               setYear(item.year)
-              setSemestre(item.semestre)
+              setSemester(item.semestre)
               setGrade(item.grade)
             }}
             style={{ backgroundColor }}
@@ -226,6 +226,33 @@ const CurrentCourses = () =>{
                 <Button title="Close" onPress={toggle}/>
             </View>
         </Modal>
+        <View style={{flexDirection: 'row'}}>
+                <View style={{margin: 8}}>
+                    <Text>Year</Text>
+                    <Picker
+                            selectedValue={year}
+                            style={{ width: 50}}
+                            onValueChange={(itemValue, itemIndex) => setYear(itemValue) }>
+                            <Picker.Item label="1" value="1" />
+                            <Picker.Item label="2" value="2" />
+                            <Picker.Item label="3" value="3" />
+                            <Picker.Item label="4" value="4" />
+                            <Picker.Item label="5" value="5" />
+                            <Picker.Item label="6" value="6" />
+                    </Picker>
+                </View>
+                <View style={{margin: 8}}>
+                    <Text>Semester</Text>
+                    <Picker
+                            selectedValue={semester}
+                            style={{ width: 50}}
+                            onValueChange={(itemValue, itemIndex) => setSemester(itemValue) }>
+                            <Picker.Item label="1" value="1" />
+                            <Picker.Item label="2" value="2" />
+                            <Picker.Item label="3" value="3" />
+                    </Picker>
+            </View>
+        </View>
             
 
         </View>
