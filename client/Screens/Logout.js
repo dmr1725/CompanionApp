@@ -10,7 +10,7 @@ function Logout({ navigation }) {
       
       let response = await Axios({
         method: 'POST',
-        url: 'http://c76261aa2309.ngrok.io/api/logout',
+        url: 'http://495f15964a0a.ngrok.io/api/logout',
         headers: {
           'content-type': 'application/json',
           Authorization: `Token ${token}`

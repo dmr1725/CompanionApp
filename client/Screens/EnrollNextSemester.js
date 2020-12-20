@@ -55,7 +55,7 @@ const EnrollNextSemester = () => {
 
       let response = await axios({
         method: 'POST',
-        url: 'http://c76261aa2309.ngrok.io/api/matricular_prox_semestre',
+        url: 'http://495f15964a0a.ngrok.io/api/matricular_prox_semestre',
         headers: {
           'content-type': 'application/json',
           Authorization: `Token ${token}`
@@ -93,7 +93,7 @@ const EnrollNextSemester = () => {
       const token = await SecureStore.getItemAsync('token')
       const response = await axios({
           method: 'GET',
-          url: `http://c76261aa2309.ngrok.io/api/select_course_prox_semestre?code=${text}`,
+          url: `http://495f15964a0a.ngrok.io/api/select_course_prox_semestre?code=${text}`,
           headers: {
             'content-type': 'application/json',
             Authorization: `Token ${token}`

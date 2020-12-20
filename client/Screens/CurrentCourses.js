@@ -54,7 +54,7 @@ const CurrentCourses = () =>{
         let user_id = parseInt(id)
 
         try {
-            let response = await axios(`http://c76261aa2309.ngrok.io/api/get_current_courses`, {
+            let response = await axios(`http://495f15964a0a.ngrok.io/api/get_current_courses`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
@@ -86,7 +86,7 @@ const CurrentCourses = () =>{
         console.log(year)
 
         try {
-            let response = await axios(`http://c76261aa2309.ngrok.io/api/delete_course`, {
+            let response = await axios(`http://495f15964a0a.ngrok.io/api/delete_course`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json',
