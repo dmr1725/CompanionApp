@@ -411,13 +411,13 @@ def getMyCurrentCourses(request):
 
         # find current semester of student, based on the current_year
         cursor = connection.cursor()
-        cursor.execute(f'select max(semestre) from "CompanionApp_matricula" where year = {current_year}')
+        cursor.execute(f'select max(semestre) from "CompanionApp_matricula" where year = {current_year} and user_id_id = {user_id}')
         current_semester = cursor.fetchone()
         current_semester = int(current_semester[0])
 
         # find current courses based on current_semester and current_year
         cursor = connection.cursor()
-        cursor.execute(f'select c.id, c.name, c.code, m.year, m.semestre, m.section, m.prof, m.salones, m.horarios, m.dias from "CompanionApp_matricula" m INNER JOIN "CompanionApp_curso" c on c.id = m.course_id_id where m.year = {current_year} and m.semestre={current_semester}')
+        cursor.execute(f'select c.id, c.name, c.code, m.year, m.semestre, m.section, m.prof, m.salones, m.horarios, m.dias from "CompanionApp_matricula" m INNER JOIN "CompanionApp_curso" c on c.id = m.course_id_id where m.year = {current_year} and m.semestre={current_semester} and m.user_id_id={user_id}')
         fetchCourses = cursor.fetchall()
 
         # convert courses array into dictionary
@@ -591,8 +591,11 @@ def deleteCourse(request):
 
             new_credits_taken_score = credits_taken_score - (current_points * creditos)
             new_credits_taken = credits_taken - creditos
-            gpa = new_credits_taken_score / new_credits_taken 
-            gpa = float("{:.2f}".format(gpa))
+            if new_credits_taken == 0:
+                gpa = 0.00
+            else:
+                gpa = new_credits_taken_score / new_credits_taken 
+                gpa = float("{:.2f}".format(gpa))
             print(new_credits_taken, 'credits taken')
             print(new_credits_taken_score, 'credits taken score')
 
