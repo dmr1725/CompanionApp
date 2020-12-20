@@ -21,8 +21,8 @@ from .models import Facultad, Curso, ProximoSemestre
 from .serializers import FacultadSerializer, CursoSerializer
 from rest_framework.decorators import api_view
 
-# clientID: 965339169610-8et02d4qpfk96vclngd0otths1rs8661.apps.googleusercontent.com
-# clientSecret: zeY8NoW6ORBHP8pDQLE2x_Z2
+
+
 
 # Create your views here.
 
