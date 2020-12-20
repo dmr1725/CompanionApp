@@ -30,7 +30,7 @@ export default function App() {
 
     let response = await axios({
       method: 'POST',
-      url: 'http://495f15964a0a.ngrok.io/api/get_current_courses',
+      url: 'https://33b414394ff5.ngrok.io/api/get_current_courses',
       headers: {
         'content-type': 'application/json',
         Authorization: `Token ${token}`
@@ -52,164 +52,164 @@ export default function App() {
     }
 
     else {
-    // courses
-    setData(response.data.list)  
-    console.log(data)
+        // courses
+        setData(response.data.list)  
+        console.log(data)
 
-    // Loop para ir curso por curso y a~adir a la agenda
-    let courses = []
-    data.map((course)=>{
-      // console.log(typeof(course.horarios))
-      
-      let horarios = course.horarios
-      let titulo = course.name
-      let horario_length = horarios.length
-      let horas = 0
-      let minutos = 0
-      let segundos = "00"
-      let dura = ""
-      let repetir = 0
+        // Loop para ir curso por curso y a~adir a la agenda
+        let courses = []
+        data.map((course)=>{
+          // console.log(typeof(course.horarios))
+          
+          let horarios = course.horarios
+          let titulo = course.name
+          let horario_length = horarios.length
+          let horas = 0
+          let minutos = 0
+          let segundos = "00"
+          let dura = ""
+          let repetir = 0
 
 
-      let hora =""
-      let empieza= ""
-      let minuto = ""
-      // console.log(horario_length)
-      horarios = horarios.replace(/A/g,'')
-      horarios = horarios.replace(/M/g,'')
-      horarios = horarios.replace(/P/g,'')
-      horarios = horarios.replace(/-/g,':')
-      // console.log(horarios)
+          let hora =""
+          let empieza= ""
+          let minuto = ""
+          // console.log(horario_length)
+          horarios = horarios.replace(/A/g,'')
+          horarios = horarios.replace(/M/g,'')
+          horarios = horarios.replace(/P/g,'')
+          horarios = horarios.replace(/-/g,':')
+          // console.log(horarios)
 
-      // Bregando con la DURACION
-      if(horario_length == 15){
-        horarios = horarios.split(':')
-        horas = horarios[2] - horarios[0]
-        minutos = horarios[3] - horarios[1]
-        minutos = minutos.toString()
-        horas = horas.toString()
-        horas = '0' + horas
-        // console.log("Horas: ", horas)
-        // console.log("Minutos: ", minutos)
-        // console.log("Segundos: ", segundos)
-        dura = horas + ":" + minutos + ":" + segundos
-        // console.log(dura)
-        // console.log(typeof(segundos))
-        // console.log(typeof(dura))
-      }
-      // Duracion para mas de un horario de una clase
-      else{
-        horarios = horarios.replace(/,/g,':')
-        horarios = horarios.split(':')
-        horario_length = horarios.length
-        console.log(horario_length)
-        repetir = horario_length/4
-        console.log("Repetir: ", repetir)
-        console.log(horarios)
+          // Bregando con la DURACION
+          if(horario_length == 15){
+            horarios = horarios.split(':')
+            horas = horarios[2] - horarios[0]
+            minutos = horarios[3] - horarios[1]
+            minutos = minutos.toString()
+            horas = horas.toString()
+            horas = '0' + horas
+            // console.log("Horas: ", horas)
+            // console.log("Minutos: ", minutos)
+            // console.log("Segundos: ", segundos)
+            dura = horas + ":" + minutos + ":" + segundos
+            // console.log(dura)
+            // console.log(typeof(segundos))
+            // console.log(typeof(dura))
+          }
+          // Duracion para mas de un horario de una clase
+          else{
+            horarios = horarios.replace(/,/g,':')
+            horarios = horarios.split(':')
+            horario_length = horarios.length
+            console.log(horario_length)
+            repetir = horario_length/4
+            console.log("Repetir: ", repetir)
+            console.log(horarios)
 
-        horas = horarios[2] - horarios[0]
-        minutos = horarios[3] - horarios[1]
-        minutos = minutos.toString()
-        horas = horas.toString()
-        horas = '0' + horas
-        // console.log("Horas: ", horas)
-        // console.log("Minutos: ", minutos)
-        // console.log("Segundos: ", segundos)
-        dura = horas + ":" + minutos + ":" + segundos
+            horas = horarios[2] - horarios[0]
+            minutos = horarios[3] - horarios[1]
+            minutos = minutos.toString()
+            horas = horas.toString()
+            horas = '0' + horas
+            // console.log("Horas: ", horas)
+            // console.log("Minutos: ", minutos)
+            // console.log("Segundos: ", segundos)
+            dura = horas + ":" + minutos + ":" + segundos
 
-        // let horas2 = horarios[7] - horarios[5]
-        // let minutos2 = horarios[8] - horarios[6]
-        // minutos2 = minutos.toString()
-        // horas2 = horas.toString()
-        // horas2 = '0' + horas
-        // // console.log("Horas: ", horas)
-        // // console.log("Minutos: ", minutos)
-        // // console.log("Segundos: ", segundos)
-        // dura2 = horas2 + ":" + minutos2 + ":" + segundos
-      }
+            // let horas2 = horarios[7] - horarios[5]
+            // let minutos2 = horarios[8] - horarios[6]
+            // minutos2 = minutos.toString()
+            // horas2 = horas.toString()
+            // horas2 = '0' + horas
+            // // console.log("Horas: ", horas)
+            // // console.log("Minutos: ", minutos)
+            // // console.log("Segundos: ", segundos)
+            // dura2 = horas2 + ":" + minutos2 + ":" + segundos
+          }
 
-      // Bregando con el START
-      if (horarios[0] < 7){
-        // console.log("Es menor: ", horarios[0])
-        hora = Number(horarios[0]) + 12
-      }
-      else{
-        hora = horarios[0]
-      }
-      minuto = horarios[1]
-      hora = hora.toString()
-      // console.log("Hora: ", hora)
-      // console.log(typeof(hora))
-      // console.log("Min: ", minuto)
-      // console.log(typeof(minuto))
-      empieza = hora + ":" + minuto + ":" + segundos
+          // Bregando con el START
+          if (horarios[0] < 7){
+            // console.log("Es menor: ", horarios[0])
+            hora = Number(horarios[0]) + 12
+          }
+          else{
+            hora = horarios[0]
+          }
+          minuto = horarios[1]
+          hora = hora.toString()
+          // console.log("Hora: ", hora)
+          // console.log(typeof(hora))
+          // console.log("Min: ", minuto)
+          // console.log(typeof(minuto))
+          empieza = hora + ":" + minuto + ":" + segundos
 
-      let date =""
-      let i = 0
-      let dias = course.dias
-      for (i = 0; i < dias.length; i++ ){
-        console.log("Esta es la letra ahora: ", dias[i])
-        let month_year = "2020-12"
-        let date_time = ""
+          let date =""
+          let i = 0
+          let dias = course.dias
+          for (i = 0; i < dias.length; i++ ){
+            console.log("Esta es la letra ahora: ", dias[i])
+            let month_year = "2020-12"
+            let date_time = ""
 
-        if(dias[i] == "L"){
-          date = "-14 "
-          date_time = month_year + date + empieza
-          console.log()
-          console.log("Starts: ", date_time)
-          // console.log("Duracion: ", dura)
-          // console.log(typeof(empieza))
-          courses.push({start: date_time, duration: dura , note: course.code})
-          console.log(dias)
-        }
+            if(dias[i] == "L"){
+              date = "-14 "
+              date_time = month_year + date + empieza
+              console.log()
+              console.log("Starts: ", date_time)
+              // console.log("Duracion: ", dura)
+              // console.log(typeof(empieza))
+              courses.push({start: date_time, duration: dura , note: course.code})
+              console.log(dias)
+            }
 
-        if(dias[i] == "M"){
-          date = "-15 "
-          date_time = month_year + date + empieza
-          console.log()
-          console.log("Starts: ", date_time)
-          // console.log("Duracion: ", dura)
-          // console.log(typeof(empieza))
-          courses.push({start: date_time, duration: dura , note: course.code})
-          console.log(dias)
-        }
+            if(dias[i] == "M"){
+              date = "-15 "
+              date_time = month_year + date + empieza
+              console.log()
+              console.log("Starts: ", date_time)
+              // console.log("Duracion: ", dura)
+              // console.log(typeof(empieza))
+              courses.push({start: date_time, duration: dura , note: course.code})
+              console.log(dias)
+            }
 
-        if(dias[i] == "W"){
-          date = "-16 "
-          date_time = month_year + date + empieza
-          console.log()
-          console.log("Starts: ", date_time)
-          // console.log("Duracion: ", dura)
-          // console.log(typeof(empieza))
-          courses.push({start: date_time, duration: dura , note: course.code})
-          console.log(dias)
-        }
+            if(dias[i] == "W"){
+              date = "-16 "
+              date_time = month_year + date + empieza
+              console.log()
+              console.log("Starts: ", date_time)
+              // console.log("Duracion: ", dura)
+              // console.log(typeof(empieza))
+              courses.push({start: date_time, duration: dura , note: course.code})
+              console.log(dias)
+            }
 
-        if(dias[i] == "J"){
-          date = "-17 "
-          date_time = month_year + date + empieza
-          console.log()
-          console.log("Starts: ", date_time)
-          // console.log("Duracion: ", dura)
-          // console.log(typeof(empieza))
-          courses.push({start: date_time, duration: dura , note: course.code})
-          console.log(dias)
-        }
+            if(dias[i] == "J"){
+              date = "-17 "
+              date_time = month_year + date + empieza
+              console.log()
+              console.log("Starts: ", date_time)
+              // console.log("Duracion: ", dura)
+              // console.log(typeof(empieza))
+              courses.push({start: date_time, duration: dura , note: course.code})
+              console.log(dias)
+            }
 
-        if(dias[i] == "V"){
-          date = "-18 "
-          date_time = month_year + date + empieza
-          console.log()
-          console.log("Starts: ", date_time)
-          // console.log("Duracion: ", dura)
-          // console.log(typeof(empieza))
-          courses.push({start: date_time, duration: dura , note: course.code})
-          console.log(dias)
-        }
-      }
-    })
+            if(dias[i] == "V"){
+              date = "-18 "
+              date_time = month_year + date + empieza
+              console.log()
+              console.log("Starts: ", date_time)
+              // console.log("Duracion: ", dura)
+              // console.log(typeof(empieza))
+              courses.push({start: date_time, duration: dura , note: course.code})
+              console.log(dias)
+            }
+          }
+        })
 
-    setSampleEvents(courses)
+        setSampleEvents(courses)
   }
 
     // console.log(courses)
