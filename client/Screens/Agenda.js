@@ -30,7 +30,7 @@ export default function App() {
 
     let response = await axios({
       method: 'POST',
-      url: 'https://33b414394ff5.ngrok.io/api/get_current_courses',
+      url: 'http://9795bbd3d085.ngrok.io/api/get_current_courses',
       headers: {
         'content-type': 'application/json',
         Authorization: `Token ${token}`

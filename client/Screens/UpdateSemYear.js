@@ -21,7 +21,7 @@ const UpdateSemYear = () => {
 
         let response = await axios({
         method: 'PATCH',
-        url: 'https://33b414394ff5.ngrok.io/api/update_year_and_semester',
+        url: 'http://9795bbd3d085.ngrok.io/api/update_year_and_semester',
         headers: {
             'content-type': 'application/json',
             Authorization: `Token ${token}`
@@ -48,7 +48,7 @@ const UpdateSemYear = () => {
 
       let response = await axios({
         method: 'POST',
-        url: 'https://33b414394ff5.ngrok.io/api/get_year_and_semester',
+        url: 'http://9795bbd3d085.ngrok.io/api/get_year_and_semester',
         headers: {
           'content-type': 'application/json',
           Authorization: `Token ${token}`
