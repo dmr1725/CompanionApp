@@ -158,7 +158,7 @@ The goal is to help students organize themselves, practice their enrollments and
     - **Logout.js**: line 13
     - **MyCurriculum.js**: line 23 and line 46
     - **UpdateSemYear.js**: line 24 and line 51
-**NOTE: EVERY TIME YOU WANT TO RESTART THE APP, YOU’LL NEED TO RESTART NGROK AND REPLACE THE NEW URL OF NGROK IN EACH FILE. THE REASON FOR THIS IS BECAUSE WE’RE USING THE FREE VERSION OF NGROK.**
+- **NOTE: EVERY TIME YOU WANT TO RESTART THE APP, YOU’LL NEED TO RESTART NGROK AND REPLACE THE NEW URL OF NGROK IN EACH FILE. THE REASON FOR THIS IS BECAUSE WE’RE USING THE FREE VERSION OF NGROK.**
 
 
 ### Step 14: run the app
