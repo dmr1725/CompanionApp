@@ -170,7 +170,7 @@ The goal is to help students organize themselves, practice their enrollments and
 
 # ADDITIONAL NOTES:
 - For now, the agenda works only through the dates **dec 14 - dec 19**. The agenda works around 80%. When you enroll in courses and go to your agenda, you will get an error. Just **ctrl + s** the file **Agenda.js** and see your agenda through the dates **dec 14 - dec 19**. 
-- **This issues will be solved in the future**
+- **This issue will be solved in the future**
 
 # How to use CompanionApp
 - Everytime you complete an action on the screens **Add Taken Courses, Current Courses, Update Grades and Enroll Next Semester** wait for around 5 seconds to see a successful message
