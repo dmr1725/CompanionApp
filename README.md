@@ -55,7 +55,7 @@ The goal is to help students organize themselves, practice their enrollments and
 
 ### Step 4: change directories in files
 - Go to **organizar/organizar.py** and change the paths in lines 4, 5 and 6 to your path
-- Go to **server/CompanionApp/views.py** and change paths in lines 3, 54 and 101 to your path. **NOTE: in line 54 you need to change 2 paths**
+- Go to **server/CompanionApp/views.py** and change paths in lines 3, 64 and 111 to your path. **NOTE: in line 64 you need to change 2 paths**
 
 
 ### Step 5: make migrations of django project
