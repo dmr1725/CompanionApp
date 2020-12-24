@@ -16,13 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include 
 from django.conf.urls import url, include 
-from CompanionApp.views import GoogleLogin
+from CompanionApp.views import GoogleLogin, Logout
 
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^rest-auth/google', GoogleLogin.as_view(), name='google_login'),
+    url(r'^logout', Logout.as_view()),
     url(r'^', include('CompanionApp.urls'))
 ]
 

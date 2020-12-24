@@ -158,7 +158,7 @@ The goal is to help students organize themselves, practice their enrollments and
     - **Logout.js**: line 13
     - **MyCurriculum.js**: line 23 and line 46
     - **UpdateSemYear.js**: line 24 and line 51
-**NOTE: EVERY TIME YOU WANT TO LOGIN THE USER, YOU’LL NEED TO RESTART NGROK AND REPLACE THE NEW URL OF NGROK IN EACH FILE. THE REASON FOR THIS IS BECAUSE WE’RE USING THE FREE VERSION OF NGROK.**
+**NOTE: EVERY TIME YOU WANT TO RESTART THE APP, YOU’LL NEED TO RESTART NGROK AND REPLACE THE NEW URL OF NGROK IN EACH FILE. THE REASON FOR THIS IS BECAUSE WE’RE USING THE FREE VERSION OF NGROK.**
 
 
 ### Step 14: run the app
@@ -169,9 +169,8 @@ The goal is to help students organize themselves, practice their enrollments and
 
 
 # ADDITIONAL NOTES:
-- For now, the agenda works only through the dates **dec 14 - dec 19**. The agenda works around 80%. When you enroll in courses and go to your agenda, you will get an error. Just **ctrl + s** the file **Agenda.js** and see your agenda through the dates **dec 14 - dec 19**.
-- For now, the logout only works in the frontend. 
-- **These issues will be solved in the future**
+- For now, the agenda works only through the dates **dec 14 - dec 19**. The agenda works around 80%. When you enroll in courses and go to your agenda, you will get an error. Just **ctrl + s** the file **Agenda.js** and see your agenda through the dates **dec 14 - dec 19**. 
+- **This issues will be solved in the future**
 
 # How to use CompanionApp
 - Everytime you complete an action on the screens **Add Taken Courses, Current Courses, Update Grades and Enroll Next Semester** wait for around 5 seconds to see a successful message

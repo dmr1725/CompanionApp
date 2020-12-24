@@ -9,8 +9,8 @@ function Logout({ navigation }) {
       const token = await SecureStore.getItemAsync('token')
       
       let response = await Axios({
-        method: 'POST',
-        url: 'http://9795bbd3d085.ngrok.io/api/logout',
+        method: 'GET',
+        url: 'http://a558914af11a.ngrok.io/logout',
         headers: {
           'content-type': 'application/json',
           Authorization: `Token ${token}`

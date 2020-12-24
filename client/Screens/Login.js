@@ -23,9 +23,9 @@ import Agenda from './Agenda'
 const Drawer = createDrawerNavigator()
 
 const IOS_CLIENT_ID =
-  "";
+  "116415331974-tf6sehooctplmmn7j0gt831mdf1oqipl.apps.googleusercontent.com";
 const ANDROID_CLIENT_ID =
-  "";
+  "116415331974-72n6g689k4me386dod763gi31vpuh71a.apps.googleusercontent.com";
 
 export default function Login() {
   const [hasToken, setHasToken] = useState(false)
@@ -43,7 +43,7 @@ export default function Login() {
 
         try {
           // login user in backend
-          let response = await fetch('http://9795bbd3d085.ngrok.io/rest-auth/google/', {
+          let response = await fetch('http://a558914af11a.ngrok.io/rest-auth/google/', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'
@@ -64,7 +64,7 @@ export default function Login() {
           const token = await SecureStore.getItemAsync('token')
 
           // storing our id
-          let id = await fetch('http://9795bbd3d085.ngrok.io/api/get_user_id', {
+          let id = await fetch('http://a558914af11a.ngrok.io/api/get_user_id', {
             method: 'GET',
             headers: {
               'content-type': 'application/json',

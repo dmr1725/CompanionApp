@@ -27,7 +27,6 @@ urlpatterns = [
     url('api/delete_course', views.deleteCourse),
     url('api/get_year_and_semester', views.getSemesterAndYear),
     url('api/update_year_and_semester', views.updateSemesterAndYear),
-    url('api/logout', views.logout)
 
 ]
 

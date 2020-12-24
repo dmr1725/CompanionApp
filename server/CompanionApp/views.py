@@ -8,7 +8,6 @@ from organizar import files3, proxSemFiles
 
 from rest_auth.registration.views import SocialLoginView
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
-from allauth.account.views import LogoutView
 
 
 from django.db import connection
@@ -21,6 +20,9 @@ from .models import Facultad, Curso, ProximoSemestre
 from .serializers import FacultadSerializer, CursoSerializer
 from rest_framework.decorators import api_view
 
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from django.contrib.auth import logout
 
 
 
@@ -28,6 +30,14 @@ from rest_framework.decorators import api_view
 
 class GoogleLogin(SocialLoginView):
     adapter_class = GoogleOAuth2Adapter
+
+class Logout(APIView):
+    def get(self, request, format=None):
+        # using Django logout
+        print(request.user)
+        request.user.auth_token.delete()
+        logout(request)
+        return Response(status=status.HTTP_200_OK)
 
 
 @api_view(['POST',])
@@ -634,17 +644,13 @@ def getSemesterAndYear(request):
         year = info[0]
         semestre = info[1]
         return JsonResponse({'msg': {'year': year, 'semestre': semestre} }, status = status.HTTP_202_ACCEPTED)
-        
-
-@api_view(['POST',])
-def logout(request):
-    request.user.auth_token.delete()
-    return JsonResponse({"success": "Successfully logged out."}, status=status.HTTP_200_OK)
+                
+    
 
 
 @api_view(['GET', 'POST'])
 def hello_world(request):
-    # if request.user.is_authenticated:
+    print(request.user.is_authenticated)
     if request.method == 'GET':
         return JsonResponse({'msg': request.user.email}, status = status.HTTP_200_OK)
     return JsonResponse({'msg': 'no'})

@@ -50,7 +50,7 @@ const CurrentCourses = () =>{
         console.log(user_id)
 
         try {
-            let response = await axios(`http://9795bbd3d085.ngrok.io/api/get_all_courses_by_semester?user_id=${user_id}&year=${year}&semestre=${semester}`, {
+            let response = await axios(`http://a558914af11a.ngrok.io/api/get_all_courses_by_semester?user_id=${user_id}&year=${year}&semestre=${semester}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -72,7 +72,7 @@ const CurrentCourses = () =>{
         let user_id = parseInt(id)
 
         try {
-            let response = await axios(`http://9795bbd3d085.ngrok.io/api/delete_course`, {
+            let response = await axios(`http://a558914af11a.ngrok.io/api/delete_course`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json',
@@ -117,7 +117,7 @@ const CurrentCourses = () =>{
         console.log(year)
 
         try {
-            let response = await axios(`http://9795bbd3d085.ngrok.io/api/update_grade_and_gpa`, {
+            let response = await axios(`http://a558914af11a.ngrok.io/api/update_grade_and_gpa`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',
